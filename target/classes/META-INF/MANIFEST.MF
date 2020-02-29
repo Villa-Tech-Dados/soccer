@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Atendimento
+Implementation-Version: 1.0.3
+Built-By: villa
+Implementation-Vendor-Id: br.com.correios.api.sara
+Build-Jdk: 1.8.0_242
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sara-atendimento
+Created-By: Maven Integration for Eclipse
+

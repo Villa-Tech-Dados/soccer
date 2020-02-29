@@ -1,0 +1,36 @@
+api: 
+  ambiente-publicacao: PRODUCAO
+  password: #<via kubernetes>
+  #sara089srhjt
+  
+#------ Spring ---------------------------------------------------------------------------------------------------
+spring:    
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@scan-ac04.correiosnet.int:1521/ac04
+    username: saradmconsulta
+    password: #<via kubernetes>
+    hikari: 
+      maximum-pool-size: 20
+      pool-name: pool-sara
+  
+  cloud:
+    consul:
+      enabled: false
+      host: consulprd-service.apimanagerprd
+      port: 8500
+      discovery: 
+        prefer-ip-address: true 
+        instanceId: ${api.service-id}
+        serviceName: ${api.service-id}
+        health-check-critical-timeout: 72h  # Apos 3 dias (check-critical) será removido o registro do CONSUL          
+  redis:
+    url: redis://redissaraatendimentoprd-service:6379 
+    
+#------Logging --------------------------------------------------------------------------------------------------------------              
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: ERROR
+  file:
+    name: sara-atendimento.log

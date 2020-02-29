@@ -1,0 +1,1739 @@
+2020-01-21 14:03:29.375  INFO 10288 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : The following profiles are active: local
+2020-01-21 14:03:31.286  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 14:03:31.286  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 14:03:31.418  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 4 repository interfaces.
+2020-01-21 14:03:31.435  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 14:03:31.440  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 14:03:31.466  INFO 10288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.FaseCaptacaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 14:03:31.467  INFO 10288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.InterfaceExecucaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 14:03:31.467  INFO 10288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MectriRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 14:03:31.472  INFO 10288 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MotivoPendenciaRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 14:03:31.472  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-01-21 14:03:31.906  INFO 10288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e501bc04-a293-33a7-bd37-065f52bd9405
+2020-01-21 14:03:32.230  INFO 10288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 14:03:32.311  INFO 10288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 14:03:32.656  WARN 10288 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-01-21 14:03:32.693  INFO 10288 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-01-21 14:03:32.693  INFO 10288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3270 ms
+2020-01-21 14:03:32.881  WARN 10288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 14:03:32.882  INFO 10288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 14:03:32.906  INFO 10288 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@556aed22
+2020-01-21 14:03:33.656  INFO 10288 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : Version: VersaoApi [versionApiCommons=2.2.1.10, versionSpringBoot=2.2.1.RELEASE]
+2020-01-21 14:03:34.116  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 14:03:35.330  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 14:03:35.411  INFO 10288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-21 14:03:35.520  INFO 10288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-21 14:03:35.691  INFO 10288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-21 14:03:35.843  INFO 10288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2020-01-21 14:03:41.224  INFO 10288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-21 14:03:41.235  INFO 10288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 14:03:41.250  INFO 10288 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : iniciando configuração apiConfig...
+2020-01-21 14:03:41.252  INFO 10288 --- [main] br.com.correios.api.gcssynch.ApiConfig   : O ambiente de syncronização da API: DESENVOLVIMENTO
+2020-01-21 14:03:41.279  INFO 10288 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : configuração apiConfig: ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 14:03:41.574  INFO 10288 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://services.usuario.idautorizadorws.correios.com.br/}IdAutorizadorUsuarioServiceService from class br.com.correios.componente.idautorizador.usuario.IdAutorizadorUsuarioService
+2020-01-21 14:03:43.050  INFO 10288 --- [main] b.c.c.a.s.client.soap.SoapClientFactory  : client instanciado: https://jhom2.correiosnet.int/idCorreiosWS-v1.2/idAutorizadorUsuario/idAutorizadorUsuarioService
+2020-01-21 14:03:43.627  WARN 10288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 14:03:44.575  INFO 10288 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-01-21 14:03:44.701  INFO 10288 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-21 14:03:44.708  INFO 10288 --- [main] b.c.c.a.c.swagger.AbstractSwaggerConfig  : AbstractSwaggerConfig Docket()
+2020-01-21 14:03:44.779  INFO 10288 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 14:03:44.784  INFO 10288 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : O ambiente de publicação da API: LOCAL
+2020-01-21 14:03:44.784  WARN 10288 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : 
+
+
+ATENÇÃO: API com código 0 (zero) só funcionará parcialmente nas estações de trabalho local. Quando for publicar nos ambientes corporativos solicitar o código no sistema GCS.n
+
+
+
+2020-01-21 14:03:45.749  WARN 10288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 14:03:45.754  INFO 10288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 14:03:45.869  INFO 10288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 14:03:46.081  WARN 10288 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-21 14:03:46.562  INFO 10288 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-21 14:03:46.784  WARN 10288 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-21 14:03:46.850  WARN 10288 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-01-21 14:03:47.050  INFO 10288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-21 14:03:47.077  INFO 10288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-21 14:03:47.131  INFO 10288 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-21 14:03:47.188  INFO 10288 --- [main] io.undertow                              : starting server: Undertow - 2.0.27.Final
+2020-01-21 14:03:47.200  INFO 10288 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-01-21 14:03:47.219  INFO 10288 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-01-21 14:03:47.294  INFO 10288 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8085 (http) with context path ''
+2020-01-21 14:03:47.405  INFO 10288 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : Started SaraCaptacaoAutomaticaApplication in 21.336 seconds (JVM running for 23.053)
+2020-01-21 14:03:47.660  INFO 10288 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 14:03:47.665  INFO 10288 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 14:03:47.678  INFO 10288 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-01-21 14:04:00.014  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:04:00
+2020-01-21 14:05:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:05:59
+2020-01-21 14:08:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:08:00
+2020-01-21 14:10:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:10:00
+2020-01-21 14:12:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:12:00
+2020-01-21 14:14:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:14:00
+2020-01-21 14:16:00.004  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:16:00
+2020-01-21 14:18:00.004  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:18:00
+2020-01-21 14:19:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:19:59
+2020-01-21 14:21:59.997  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:21:59
+2020-01-21 14:23:59.997  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:23:59
+2020-01-21 14:25:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:25:59
+2020-01-21 14:27:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:27:59
+2020-01-21 14:30:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:30:00
+2020-01-21 14:31:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:31:59
+2020-01-21 14:34:00.002  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:34:00
+2020-01-21 14:36:00.002  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:36:00
+2020-01-21 14:38:00.011  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:38:00
+2020-01-21 14:40:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:40:00
+2020-01-21 14:42:00.002  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:42:00
+2020-01-21 14:43:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:43:59
+2020-01-21 14:46:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:46:00
+2020-01-21 14:48:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:48:00
+2020-01-21 14:50:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:50:00
+2020-01-21 14:51:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:51:59
+2020-01-21 14:54:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:54:00
+2020-01-21 14:55:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:55:59
+2020-01-21 14:57:59.997  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:57:59
+2020-01-21 14:59:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 14:59:59
+2020-01-21 15:01:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:01:59
+2020-01-21 15:03:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:03:59
+2020-01-21 15:05:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:05:59
+2020-01-21 15:07:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:07:59
+2020-01-21 15:09:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:09:59
+2020-01-21 15:11:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:11:59
+2020-01-21 15:13:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:13:59
+2020-01-21 15:16:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:16:00
+2020-01-21 15:17:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:17:59
+2020-01-21 15:20:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:20:00
+2020-01-21 15:22:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:22:00
+2020-01-21 15:24:00.006  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:24:00
+2020-01-21 15:26:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:26:00
+2020-01-21 15:28:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:28:00
+2020-01-21 15:30:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:30:00
+2020-01-21 15:32:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:32:00
+2020-01-21 15:34:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:34:00
+2020-01-21 15:36:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:36:00
+2020-01-21 15:38:00.004  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:38:00
+2020-01-21 15:40:00.000  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:40:00
+2020-01-21 15:42:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:42:00
+2020-01-21 15:43:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:43:59
+2020-01-21 15:45:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:45:59
+2020-01-21 15:47:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:47:59
+2020-01-21 15:49:59.997  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:49:59
+2020-01-21 15:51:59.997  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:51:59
+2020-01-21 15:53:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:53:59
+2020-01-21 15:55:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:55:59
+2020-01-21 15:57:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:57:59
+2020-01-21 15:59:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 15:59:59
+2020-01-21 16:01:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:01:59
+2020-01-21 16:03:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:03:59
+2020-01-21 16:05:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:05:59
+2020-01-21 16:07:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:07:59
+2020-01-21 16:10:00.002  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:10:00
+2020-01-21 16:11:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:11:59
+2020-01-21 16:13:59.998  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:13:59
+2020-01-21 16:15:59.999  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:15:59
+2020-01-21 16:18:00.001  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:18:00
+2020-01-21 16:19:59.996  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:19:59
+2020-01-21 16:21:59.989  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:21:59
+2020-01-21 16:23:59.990  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:23:59
+2020-01-21 16:25:59.992  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:25:59
+2020-01-21 16:27:59.992  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:27:59
+2020-01-21 16:29:59.988  INFO 10288 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:29:59
+2020-01-21 16:39:00.136  INFO 9580 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : The following profiles are active: local
+2020-01-21 16:39:01.940  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:39:01.967  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:39:02.094  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 4 repository interfaces.
+2020-01-21 16:39:02.118  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:39:02.120  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:39:02.147  INFO 9580 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.FaseCaptacaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:39:02.148  INFO 9580 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.InterfaceExecucaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:39:02.154  INFO 9580 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MectriRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:39:02.155  INFO 9580 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MotivoPendenciaRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:39:02.155  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-01-21 16:39:02.620  INFO 9580 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e501bc04-a293-33a7-bd37-065f52bd9405
+2020-01-21 16:39:02.873  INFO 9580 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:39:02.937  INFO 9580 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:39:03.248  WARN 9580 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-01-21 16:39:03.289  INFO 9580 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-01-21 16:39:03.294  INFO 9580 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3099 ms
+2020-01-21 16:39:03.427  WARN 9580 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:39:03.428  INFO 9580 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:39:03.441  INFO 9580 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16f4a3c0
+2020-01-21 16:39:04.136  INFO 9580 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : Version: VersaoApi [versionApiCommons=2.2.1.10, versionSpringBoot=2.2.1.RELEASE]
+2020-01-21 16:39:04.556  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:39:05.749  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 16:39:05.844  INFO 9580 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-21 16:39:05.954  INFO 9580 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-21 16:39:06.118  INFO 9580 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-21 16:39:06.272  INFO 9580 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2020-01-21 16:39:10.358  INFO 9580 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-21 16:39:10.374  INFO 9580 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 16:39:10.383  INFO 9580 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : iniciando configuração apiConfig...
+2020-01-21 16:39:10.390  INFO 9580 --- [main] br.com.correios.api.gcssynch.ApiConfig   : O ambiente de syncronização da API: DESENVOLVIMENTO
+2020-01-21 16:39:10.414  INFO 9580 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : configuração apiConfig: ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:39:10.764  INFO 9580 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://services.usuario.idautorizadorws.correios.com.br/}IdAutorizadorUsuarioServiceService from class br.com.correios.componente.idautorizador.usuario.IdAutorizadorUsuarioService
+2020-01-21 16:39:12.409  INFO 9580 --- [main] b.c.c.a.s.client.soap.SoapClientFactory  : client instanciado: https://jhom2.correiosnet.int/idCorreiosWS-v1.2/idAutorizadorUsuario/idAutorizadorUsuarioService
+2020-01-21 16:39:13.088  WARN 9580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 16:39:14.049  INFO 9580 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-01-21 16:39:14.165  INFO 9580 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-21 16:39:14.172  INFO 9580 --- [main] b.c.c.a.c.swagger.AbstractSwaggerConfig  : AbstractSwaggerConfig Docket()
+2020-01-21 16:39:14.229  INFO 9580 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:39:14.230  INFO 9580 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : O ambiente de publicação da API: LOCAL
+2020-01-21 16:39:14.235  WARN 9580 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : 
+
+
+ATENÇÃO: API com código 0 (zero) só funcionará parcialmente nas estações de trabalho local. Quando for publicar nos ambientes corporativos solicitar o código no sistema GCS.n
+
+
+
+2020-01-21 16:39:15.218  WARN 9580 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:39:15.223  INFO 9580 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:39:15.337  INFO 9580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 16:39:15.533  WARN 9580 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-21 16:39:15.989  INFO 9580 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-21 16:39:16.223  WARN 9580 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-21 16:39:16.300  WARN 9580 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-01-21 16:39:16.510  INFO 9580 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-21 16:39:16.532  INFO 9580 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-21 16:39:16.589  INFO 9580 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-21 16:39:16.644  INFO 9580 --- [main] io.undertow                              : starting server: Undertow - 2.0.27.Final
+2020-01-21 16:39:16.659  INFO 9580 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-01-21 16:39:16.672  INFO 9580 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-01-21 16:39:16.820  INFO 9580 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8085 (http) with context path ''
+2020-01-21 16:39:16.943  INFO 9580 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : Started SaraCaptacaoAutomaticaApplication in 20.025 seconds (JVM running for 21.36)
+2020-01-21 16:39:18.872  INFO 9580 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 16:39:18.878  INFO 9580 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 16:39:18.896  INFO 9580 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-01-21 16:40:00.152  INFO 9580 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:40:00
+2020-01-21 16:41:16.126 DEBUG 9580 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.is_ativo as is_ativo4_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia5_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface7_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha8_2_,
+                interfacee0_.ein_in_status as ein_in_status9_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:41:16.234  WARN 9580 --- [XNIO-1 task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 904, SQLState: 42000
+2020-01-21 16:41:16.243 ERROR 9580 --- [XNIO-1 task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+2020-01-21 16:41:16.314 ERROR 9580 --- [XNIO-1 task-1] b.c.c.a.c.e.CommonsExceptionHandler      : org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy232.findAll(Unknown Source)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService.findUltimasExecucoesPorMcu(InterfaceExecucaoService.java:156)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService$$FastClassBySpringCGLIB$$37519c8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService$$EnhancerBySpringCGLIB$$b0b06383.findUltimasExecucoesPorMcu(<generated>)
+	at br.com.correios.api.sara_captacaoautomatica.controller.InterfaceExecucaoController.obterUltimasExecucoesPorMcu(InterfaceExecucaoController.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:503)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at br.com.correios.api.commons.filter.PreFilter.doFilter(PreFilter.java:50)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2292)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:953)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354)
+	at org.hibernate.loader.Loader.doList(Loader.java:2815)
+	at org.hibernate.loader.Loader.doList(Loader.java:2797)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629)
+	at org.hibernate.loader.Loader.list(Loader.java:2624)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1396)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1558)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:637)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:445)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 90 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3687)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 126 more
+Caused by: Error : 904, Position : 371, Sql = /* select generatedAlias0 from InterfaceExecucao as generatedAlias0 where ( generatedAlias0.numeroInterface=78 ) and ( generatedAlias0.mcu=64604004L ) order by generatedAlias0.dataInicioExecucao desc */ select * from ( select interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_, interfacee0_.ein_dh_fim as ein_dh_fim2_2_, interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_, interfacee0_.is_ativo as is_ativo4_2_, interfacee0_.org_nu_agencia as org_nu_agencia5_2_, interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_, interfacee0_.itf_nu_interface as itf_nu_interface7_2_, interfacee0_.ein_qt_linha as ein_qt_linha8_2_, interfacee0_.ein_in_status as ein_in_status9_2_ from nep_itf_execucao interfacee0_ where interfacee0_.itf_nu_interface=78 and interfacee0_.org_nu_agencia=64604004 order by interfacee0_.ein_dh_inicio desc ) where rownum <= :1 , OriginalSql = /* select generatedAlias0 from InterfaceExecucao as generatedAlias0 where ( generatedAlias0.numeroInterface=78 ) and ( generatedAlias0.mcu=64604004L ) order by generatedAlias0.dataInicioExecucao desc */ select * from ( select interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_, interfacee0_.ein_dh_fim as ein_dh_fim2_2_, interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_, interfacee0_.is_ativo as is_ativo4_2_, interfacee0_.org_nu_agencia as org_nu_agencia5_2_, interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_, interfacee0_.itf_nu_interface as itf_nu_interface7_2_, interfacee0_.ein_qt_linha as ein_qt_linha8_2_, interfacee0_.ein_in_status as ein_in_status9_2_ from nep_itf_execucao interfacee0_ where interfacee0_.itf_nu_interface=78 and interfacee0_.org_nu_agencia=64604004 order by interfacee0_.ein_dh_inicio desc ) where rownum <= ?, Error Msg = ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 143 more
+
+2020-01-21 16:41:49.027  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-01-21 16:41:49.049  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-21 16:41:49.063  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-21 16:41:49.088  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 16:41:49.122  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-21 16:41:49.455  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-21 16:41:49.459  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-01-21 16:41:49.462  INFO 9580 --- [RMI TCP Connection(4)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.27.Final
+2020-01-21 16:46:14.153  INFO 7864 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : The following profiles are active: local
+2020-01-21 16:46:15.989  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:46:15.998  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:46:16.133  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 4 repository interfaces.
+2020-01-21 16:46:16.155  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:46:16.156  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:46:16.184  INFO 7864 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.FaseCaptacaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:46:16.185  INFO 7864 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.InterfaceExecucaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:46:16.190  INFO 7864 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MectriRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:46:16.191  INFO 7864 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MotivoPendenciaRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:46:16.191  INFO 7864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2020-01-21 16:46:16.613  INFO 7864 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e501bc04-a293-33a7-bd37-065f52bd9405
+2020-01-21 16:46:16.965  INFO 7864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:46:17.063  INFO 7864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:46:17.352  WARN 7864 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-01-21 16:46:17.386  INFO 7864 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-01-21 16:46:17.391  INFO 7864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3202 ms
+2020-01-21 16:46:17.540  WARN 7864 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:46:17.545  INFO 7864 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:46:17.558  INFO 7864 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@308c65e0
+2020-01-21 16:46:18.280  INFO 7864 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : Version: VersaoApi [versionApiCommons=2.2.1.10, versionSpringBoot=2.2.1.RELEASE]
+2020-01-21 16:46:18.708  INFO 7864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:46:19.657  INFO 7864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 16:46:19.750  INFO 7864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-21 16:46:19.862  INFO 7864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-21 16:46:20.051  INFO 7864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-21 16:46:20.232  INFO 7864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2020-01-21 16:46:27.698  INFO 7864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-21 16:46:27.726  INFO 7864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 16:46:27.738  INFO 7864 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : iniciando configuração apiConfig...
+2020-01-21 16:46:27.747  INFO 7864 --- [main] br.com.correios.api.gcssynch.ApiConfig   : O ambiente de syncronização da API: DESENVOLVIMENTO
+2020-01-21 16:46:27.787  INFO 7864 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : configuração apiConfig: ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:46:28.051  INFO 7864 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://services.usuario.idautorizadorws.correios.com.br/}IdAutorizadorUsuarioServiceService from class br.com.correios.componente.idautorizador.usuario.IdAutorizadorUsuarioService
+2020-01-21 16:46:29.696  INFO 7864 --- [main] b.c.c.a.s.client.soap.SoapClientFactory  : client instanciado: https://jhom2.correiosnet.int/idCorreiosWS-v1.2/idAutorizadorUsuario/idAutorizadorUsuarioService
+2020-01-21 16:46:30.274  WARN 7864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 16:46:31.217  INFO 7864 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-01-21 16:46:31.338  INFO 7864 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-21 16:46:31.346  INFO 7864 --- [main] b.c.c.a.c.swagger.AbstractSwaggerConfig  : AbstractSwaggerConfig Docket()
+2020-01-21 16:46:31.407  INFO 7864 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:46:31.408  INFO 7864 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : O ambiente de publicação da API: LOCAL
+2020-01-21 16:46:31.413  WARN 7864 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : 
+
+
+ATENÇÃO: API com código 0 (zero) só funcionará parcialmente nas estações de trabalho local. Quando for publicar nos ambientes corporativos solicitar o código no sistema GCS.n
+
+
+
+2020-01-21 16:46:31.946  WARN 7864 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:46:31.947  INFO 7864 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:46:32.058  INFO 7864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 16:46:32.245  WARN 7864 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-21 16:46:32.714  INFO 7864 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-21 16:46:32.933  WARN 7864 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-21 16:46:32.998  WARN 7864 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-01-21 16:46:33.195  INFO 7864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-21 16:46:33.217  INFO 7864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-21 16:46:33.276  INFO 7864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-21 16:46:33.331  INFO 7864 --- [main] io.undertow                              : starting server: Undertow - 2.0.27.Final
+2020-01-21 16:46:33.349  INFO 7864 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-01-21 16:46:33.364  INFO 7864 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-01-21 16:46:33.439  INFO 7864 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8085 (http) with context path ''
+2020-01-21 16:46:33.528  INFO 7864 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : Started SaraCaptacaoAutomaticaApplication in 22.673 seconds (JVM running for 23.974)
+2020-01-21 16:46:35.420  INFO 7864 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 16:46:35.425  INFO 7864 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 16:46:35.444  INFO 7864 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-21 16:46:40.248 DEBUG 7864 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.is_ativo as is_ativo4_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia5_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface7_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha8_2_,
+                interfacee0_.ein_in_status as ein_in_status9_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:46:40.353  WARN 7864 --- [XNIO-1 task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 904, SQLState: 42000
+2020-01-21 16:46:40.353 ERROR 7864 --- [XNIO-1 task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+2020-01-21 16:46:40.421 ERROR 7864 --- [XNIO-1 task-1] b.c.c.a.c.e.CommonsExceptionHandler      : org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy232.findAll(Unknown Source)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService.findUltimasExecucoesPorMcu(InterfaceExecucaoService.java:156)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService$$FastClassBySpringCGLIB$$37519c8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at br.com.correios.api.sara_captacaoautomatica.service.InterfaceExecucaoService$$EnhancerBySpringCGLIB$$775f848b.findUltimasExecucoesPorMcu(<generated>)
+	at br.com.correios.api.sara_captacaoautomatica.controller.InterfaceExecucaoController.obterUltimasExecucoesPorMcu(InterfaceExecucaoController.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:503)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at br.com.correios.api.commons.filter.PreFilter.doFilter(PreFilter.java:50)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:376)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2292)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:953)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354)
+	at org.hibernate.loader.Loader.doList(Loader.java:2815)
+	at org.hibernate.loader.Loader.doList(Loader.java:2797)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629)
+	at org.hibernate.loader.Loader.list(Loader.java:2624)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1396)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1558)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:637)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:445)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 90 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:765)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:921)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1099)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3687)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1165)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 126 more
+Caused by: Error : 904, Position : 371, Sql = /* select generatedAlias0 from InterfaceExecucao as generatedAlias0 where ( generatedAlias0.numeroInterface=78 ) and ( generatedAlias0.mcu=64604004L ) order by generatedAlias0.dataInicioExecucao desc */ select * from ( select interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_, interfacee0_.ein_dh_fim as ein_dh_fim2_2_, interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_, interfacee0_.is_ativo as is_ativo4_2_, interfacee0_.org_nu_agencia as org_nu_agencia5_2_, interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_, interfacee0_.itf_nu_interface as itf_nu_interface7_2_, interfacee0_.ein_qt_linha as ein_qt_linha8_2_, interfacee0_.ein_in_status as ein_in_status9_2_ from nep_itf_execucao interfacee0_ where interfacee0_.itf_nu_interface=78 and interfacee0_.org_nu_agencia=64604004 order by interfacee0_.ein_dh_inicio desc ) where rownum <= :1 , OriginalSql = /* select generatedAlias0 from InterfaceExecucao as generatedAlias0 where ( generatedAlias0.numeroInterface=78 ) and ( generatedAlias0.mcu=64604004L ) order by generatedAlias0.dataInicioExecucao desc */ select * from ( select interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_, interfacee0_.ein_dh_fim as ein_dh_fim2_2_, interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_, interfacee0_.is_ativo as is_ativo4_2_, interfacee0_.org_nu_agencia as org_nu_agencia5_2_, interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger6_2_, interfacee0_.itf_nu_interface as itf_nu_interface7_2_, interfacee0_.ein_qt_linha as ein_qt_linha8_2_, interfacee0_.ein_in_status as ein_in_status9_2_ from nep_itf_execucao interfacee0_ where interfacee0_.itf_nu_interface=78 and interfacee0_.org_nu_agencia=64604004 order by interfacee0_.ein_dh_inicio desc ) where rownum <= ?, Error Msg = ORA-00904: "INTERFACEE0_"."IS_ATIVO": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 143 more
+
+2020-01-21 16:47:58.675  INFO 8332 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : The following profiles are active: local
+2020-01-21 16:48:00.515  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:48:00.528  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:48:00.677  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140ms. Found 4 repository interfaces.
+2020-01-21 16:48:00.732  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-21 16:48:00.734  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-21 16:48:00.793  INFO 8332 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.FaseCaptacaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:48:00.795  INFO 8332 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.InterfaceExecucaoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:48:00.814  INFO 8332 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MectriRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:48:00.815  INFO 8332 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface br.com.correios.api.sara_captacaoautomatica.repository.MotivoPendenciaRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-21 16:48:00.819  INFO 8332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 0 repository interfaces.
+2020-01-21 16:48:01.298  INFO 8332 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e501bc04-a293-33a7-bd37-065f52bd9405
+2020-01-21 16:48:01.636  INFO 8332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:48:01.709  INFO 8332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 16:48:02.025  WARN 8332 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-01-21 16:48:02.060  INFO 8332 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-01-21 16:48:02.065  INFO 8332 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3356 ms
+2020-01-21 16:48:02.212  WARN 8332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:48:02.212  INFO 8332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:48:02.224  INFO 8332 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@68f2363
+2020-01-21 16:48:02.943  INFO 8332 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : Version: VersaoApi [versionApiCommons=2.2.1.10, versionSpringBoot=2.2.1.RELEASE]
+2020-01-21 16:48:03.369  INFO 8332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:48:03.505 ERROR 8332 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:801)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$9686ee8c.getConnection(<generated>)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:120)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateDefaultDdlAutoProvider.getDefaultDdlAuto(HibernateDefaultDdlAutoProvider.java:42)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.lambda$getVendorProperties$1(HibernateJpaConfiguration.java:130)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:136)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:102)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:94)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration.getVendorProperties(HibernateJpaConfiguration.java:132)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.entityManagerFactory(JpaBaseConfiguration.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at br.com.correios.api.sara_captacaoautomatica.SaraCaptacaoAutomaticaApplication.main(SaraCaptacaoAutomaticaApplication.java:35)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:209)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:141)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:490)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:660)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:287)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1481)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:540)
+	... 59 common frames omitted
+
+2020-01-21 16:48:03.572  INFO 8332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-21 16:48:03.677  INFO 8332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-21 16:48:03.839  INFO 8332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-21 16:48:04.017  INFO 8332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:48:04.021 ERROR 8332 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:801)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$9686ee8c.getConnection(<generated>)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1214)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1245)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at br.com.correios.api.sara_captacaoautomatica.SaraCaptacaoAutomaticaApplication.main(SaraCaptacaoAutomaticaApplication.java:35)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:209)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:141)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:490)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:660)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:287)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1481)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:540)
+	... 60 common frames omitted
+
+2020-01-21 16:48:04.028  WARN 8332 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Erro de ES: Unknown host specified 
+2020-01-21 16:48:04.047  INFO 8332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2020-01-21 16:48:05.088  INFO 8332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:48:05.095 ERROR 8332 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:801)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$9686ee8c.getConnection(<generated>)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.hql.spi.id.IdTableHelper.executeIdTableCreationStatements(IdTableHelper.java:67)
+	at org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy.finishPreparation(GlobalTemporaryTableBulkIdStrategy.java:125)
+	at org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy.finishPreparation(GlobalTemporaryTableBulkIdStrategy.java:42)
+	at org.hibernate.hql.spi.id.AbstractMultiTableBulkIdStrategyImpl.prepare(AbstractMultiTableBulkIdStrategyImpl.java:88)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:313)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at br.com.correios.api.sara_captacaoautomatica.SaraCaptacaoAutomaticaApplication.main(SaraCaptacaoAutomaticaApplication.java:35)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:209)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:141)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:490)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:660)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:287)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1481)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:540)
+	... 53 common frames omitted
+
+2020-01-21 16:48:05.102 ERROR 8332 --- [main] org.hibernate.hql.spi.id.IdTableHelper   : Unable obtain JDBC Connection
+
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:801)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$9686ee8c.getConnection(<generated>)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.hql.spi.id.IdTableHelper.executeIdTableCreationStatements(IdTableHelper.java:67)
+	at org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy.finishPreparation(GlobalTemporaryTableBulkIdStrategy.java:125)
+	at org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy.finishPreparation(GlobalTemporaryTableBulkIdStrategy.java:42)
+	at org.hibernate.hql.spi.id.AbstractMultiTableBulkIdStrategyImpl.prepare(AbstractMultiTableBulkIdStrategyImpl.java:88)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:313)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at br.com.correios.api.sara_captacaoautomatica.SaraCaptacaoAutomaticaApplication.main(SaraCaptacaoAutomaticaApplication.java:35)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:209)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:141)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:490)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:660)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:287)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1481)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:540)
+	... 53 common frames omitted
+
+2020-01-21 16:48:05.105  INFO 8332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-21 16:48:05.130  INFO 8332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 16:48:05.136  INFO 8332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:48:05.145 ERROR 8332 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLRecoverableException: Erro de ES: Unknown host specified 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:801)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.zaxxer.hikari.HikariDataSource$$FastClassBySpringCGLIB$$eeb1ae86.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$9686ee8c.getConnection(<generated>)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:120)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.lambda$isInitializingDatabase$0(DataSourceInitializedPublisher.java:116)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings.getDdlAuto(HibernateSettings.java:41)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineDdlAuto(HibernateProperties.java:136)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.getAdditionalProperties(HibernateProperties.java:102)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties.determineHibernateProperties(HibernateProperties.java:94)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.isInitializingDatabase(DataSourceInitializedPublisher.java:118)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:98)
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:90)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1807)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at br.com.correios.api.sara_captacaoautomatica.SaraCaptacaoAutomaticaApplication.main(SaraCaptacaoAutomaticaApplication.java:35)
+Caused by: oracle.net.ns.NetException: Unknown host specified 
+	at oracle.net.resolver.HostnameNamingAdapter.resolve(HostnameNamingAdapter.java:209)
+	at oracle.net.resolver.NameResolver.resolveName(NameResolver.java:141)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:490)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:660)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:287)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1481)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:540)
+	... 52 common frames omitted
+
+2020-01-21 16:48:05.151  INFO 8332 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : iniciando configuração apiConfig...
+2020-01-21 16:48:05.154  INFO 8332 --- [main] br.com.correios.api.gcssynch.ApiConfig   : O ambiente de syncronização da API: DESENVOLVIMENTO
+2020-01-21 16:48:05.176  INFO 8332 --- [main] b.c.c.api.gcssynch.GcsConfiguration      : configuração apiConfig: ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:48:05.469  INFO 8332 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://services.usuario.idautorizadorws.correios.com.br/}IdAutorizadorUsuarioServiceService from class br.com.correios.componente.idautorizador.usuario.IdAutorizadorUsuarioService
+2020-01-21 16:48:06.857  INFO 8332 --- [main] b.c.c.a.s.client.soap.SoapClientFactory  : client instanciado: https://jhom2.correiosnet.int/idCorreiosWS-v1.2/idAutorizadorUsuario/idAutorizadorUsuarioService
+2020-01-21 16:48:07.497  WARN 8332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 16:48:08.407  INFO 8332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2020-01-21 16:48:08.528  INFO 8332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-21 16:48:08.535  INFO 8332 --- [main] b.c.c.a.c.swagger.AbstractSwaggerConfig  : AbstractSwaggerConfig Docket()
+2020-01-21 16:48:08.595  INFO 8332 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : ApiConfig(id=0, serviceId=saraapi, nome=sara-captacaoautomatica, versao=1.0.1, paths=[/**], credencial=true, ambientePublicacao=LOCAL, ambienteSincronizacao=DESENVOLVIMENTO, emails=null, tokenObj=null, enviaEmail=false, retornaStacktrace=true)
+2020-01-21 16:48:08.596  INFO 8332 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : O ambiente de publicação da API: LOCAL
+2020-01-21 16:48:08.602  WARN 8332 --- [main] b.c.c.api.gcssynch.gcs.SynchonizedGcs    : 
+
+
+ATENÇÃO: API com código 0 (zero) só funcionará parcialmente nas estações de trabalho local. Quando for publicar nos ambientes corporativos solicitar o código no sistema GCS.n
+
+
+
+2020-01-21 16:48:10.050  WARN 8332 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-21 16:48:10.057  INFO 8332 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-21 16:48:10.189  INFO 8332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 16:48:10.379  WARN 8332 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-21 16:48:10.822  INFO 8332 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-21 16:48:11.065  WARN 8332 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-21 16:48:11.151  WARN 8332 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-01-21 16:48:11.368  INFO 8332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-01-21 16:48:11.391  INFO 8332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-01-21 16:48:11.469  INFO 8332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-01-21 16:48:11.523  INFO 8332 --- [main] io.undertow                              : starting server: Undertow - 2.0.27.Final
+2020-01-21 16:48:11.538  INFO 8332 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-01-21 16:48:11.553  INFO 8332 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-01-21 16:48:11.636  INFO 8332 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8085 (http) with context path ''
+2020-01-21 16:48:11.732  INFO 8332 --- [main] .c.a.s.SaraCaptacaoAutomaticaApplication : Started SaraCaptacaoAutomaticaApplication in 16.425 seconds (JVM running for 17.759)
+2020-01-21 16:48:13.722  INFO 8332 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 16:48:13.728  INFO 8332 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 16:48:13.746  INFO 8332 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-21 16:49:12.375  INFO 8332 --- [XNIO-1 task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 16:49:13.195  INFO 8332 --- [XNIO-1 task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 16:49:13.382 DEBUG 8332 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:49:14.227 DEBUG 8332 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=78 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 16:49:14.326 DEBUG 8332 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=79 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:49:14.402 DEBUG 8332 --- [XNIO-1 task-1] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=79 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 16:49:44.192  INFO 8332 --- [XNIO-1 task-1] b.c.c.a.s.s.InterfaceExecucaoService     : InterfaceExecucao: [{"id":1480676,"numeroInterface":78,"statusExecucao":0,"qtdRegistros":0,"dataInicioExecucao":"2019-11-21T22:52:31","dataFimExecucao":"2019-11-21T22:52:33","mcu":64604004,"ativo":true},{"id":1480679,"numeroInterface":79,"dataInicioExecucao":"2019-11-21T22:52:47","mcu":64604004,"ativo":false}]
+2020-01-21 16:50:00.340  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:50:00
+2020-01-21 16:50:51.610 DEBUG 8332 --- [XNIO-1 task-2] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:50:51.691 DEBUG 8332 --- [XNIO-1 task-2] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=78 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 16:50:51.775 DEBUG 8332 --- [XNIO-1 task-2] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=79 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 16:50:51.854 DEBUG 8332 --- [XNIO-1 task-2] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=79 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 16:50:57.348  INFO 8332 --- [XNIO-1 task-2] b.c.c.a.s.s.InterfaceExecucaoService     : InterfaceExecucao: [{"id":1480676,"numeroInterface":78,"statusExecucao":0,"qtdRegistros":0,"dataInicioExecucao":"2019-11-21T22:52:31","dataFimExecucao":"2019-11-21T22:52:33","mcu":64604004,"ativo":true},{"id":1480679,"numeroInterface":79,"dataInicioExecucao":"2019-11-21T22:52:47","mcu":64604004,"ativo":false}]
+2020-01-21 16:52:00.249  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:52:00
+2020-01-21 16:54:00.247  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:54:00
+2020-01-21 16:56:00.134  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:56:00
+2020-01-21 16:58:00.010  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 16:58:00
+2020-01-21 17:00:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:00:00
+2020-01-21 17:02:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:02:00
+2020-01-21 17:04:00.036  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:04:00
+2020-01-21 17:05:59.990  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:05:59
+2020-01-21 17:07:59.983  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:07:59
+2020-01-21 17:09:59.992  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:09:59
+2020-01-21 17:11:59.992  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:11:59
+2020-01-21 17:13:59.987  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:13:59
+2020-01-21 17:15:59.964  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:15:59
+2020-01-21 17:17:59.964  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:17:59
+2020-01-21 17:20:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:20:00
+2020-01-21 17:22:00.010  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:22:00
+2020-01-21 17:24:00.003  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:24:00
+2020-01-21 17:26:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:26:00
+2020-01-21 17:28:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:28:00
+2020-01-21 17:30:00.003  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:30:00
+2020-01-21 17:32:00.035  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:32:00
+2020-01-21 17:34:00.040  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:34:00
+2020-01-21 17:34:02.332 DEBUG 8332 --- [XNIO-1 task-3] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 17:34:03.294 DEBUG 8332 --- [XNIO-1 task-3] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=78 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 17:34:03.401 DEBUG 8332 --- [XNIO-1 task-3] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=79 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 17:34:03.489 DEBUG 8332 --- [XNIO-1 task-3] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=79 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 17:34:10.220  INFO 8332 --- [XNIO-1 task-3] b.c.c.a.s.s.InterfaceExecucaoService     : InterfaceExecucao: [{"id":1480676,"numeroInterface":78,"statusExecucao":0,"qtdRegistros":0,"dataInicioExecucao":"2019-11-21T22:52:31","dataFimExecucao":"2019-11-21T22:52:33","mcu":64604004,"ativo":true},{"id":1480679,"numeroInterface":79,"dataInicioExecucao":"2019-11-21T22:52:47","mcu":64604004,"ativo":false}]
+2020-01-21 17:36:00.036  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:36:00
+2020-01-21 17:36:55.799 DEBUG 8332 --- [XNIO-1 task-4] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=78 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 17:36:55.876 DEBUG 8332 --- [XNIO-1 task-4] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=78 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=78 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 17:36:55.958 DEBUG 8332 --- [XNIO-1 task-4] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) 
+    order by
+        generatedAlias0.dataInicioExecucao desc */ select
+            * 
+        from
+            ( select
+                interfacee0_.ein_nu_execucao as ein_nu_execucao1_2_,
+                interfacee0_.ein_dh_fim as ein_dh_fim2_2_,
+                interfacee0_.ein_dh_inicio as ein_dh_inicio3_2_,
+                interfacee0_.org_nu_agencia as org_nu_agencia4_2_,
+                interfacee0_.ein_no_arquivo_gerado as ein_no_arquivo_ger5_2_,
+                interfacee0_.itf_nu_interface as itf_nu_interface6_2_,
+                interfacee0_.ein_qt_linha as ein_qt_linha7_2_,
+                interfacee0_.ein_in_status as ein_in_status8_2_ 
+            from
+                nep_itf_execucao interfacee0_ 
+            where
+                interfacee0_.itf_nu_interface=79 
+                and interfacee0_.org_nu_agencia=64604004 
+            order by
+                interfacee0_.ein_dh_inicio desc ) 
+        where
+            rownum <= ?
+2020-01-21 17:36:56.033 DEBUG 8332 --- [XNIO-1 task-4] org.hibernate.SQL                        : 
+    /* select
+        count(generatedAlias0) 
+    from
+        InterfaceExecucao as generatedAlias0 
+    where
+        (
+            generatedAlias0.numeroInterface=79 
+        ) 
+        and (
+            generatedAlias0.mcu=64604004L 
+        ) */ select
+            count(interfacee0_.ein_nu_execucao) as col_0_0_ 
+        from
+            nep_itf_execucao interfacee0_ 
+        where
+            interfacee0_.itf_nu_interface=79 
+            and interfacee0_.org_nu_agencia=64604004
+2020-01-21 17:36:56.121  INFO 8332 --- [XNIO-1 task-4] b.c.c.a.s.s.InterfaceExecucaoService     : InterfaceExecucao: [{"id":1480676,"numeroInterface":78,"statusExecucao":0,"qtdRegistros":0,"dataInicioExecucao":"2019-11-21T22:52:31","dataFimExecucao":"2019-11-21T22:52:33","mcu":64604004,"ativo":true},{"id":1480679,"numeroInterface":79,"dataInicioExecucao":"2019-11-21T22:52:47","mcu":64604004,"ativo":false}]
+2020-01-21 17:38:00.039  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:38:00
+2020-01-21 17:40:00.026  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:40:00
+2020-01-21 17:42:00.020  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:42:00
+2020-01-21 17:44:00.018  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:44:00
+2020-01-21 17:46:00.014  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:46:00
+2020-01-21 17:48:00.012  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:48:00
+2020-01-21 17:50:00.012  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:50:00
+2020-01-21 17:52:00.010  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:52:00
+2020-01-21 17:54:00.011  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:54:00
+2020-01-21 17:56:00.010  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:56:00
+2020-01-21 17:58:00.010  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 17:58:00
+2020-01-21 18:00:00.012  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:00:00
+2020-01-21 18:02:00.009  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:02:00
+2020-01-21 18:04:00.017  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:04:00
+2020-01-21 18:06:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:06:00
+2020-01-21 18:08:00.012  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:08:00
+2020-01-21 18:10:00.023  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:10:00
+2020-01-21 18:12:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:12:00
+2020-01-21 18:14:00.017  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:14:00
+2020-01-21 18:16:00.009  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:16:00
+2020-01-21 18:18:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:18:00
+2020-01-21 18:19:59.969  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:19:59
+2020-01-21 18:21:59.969  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:21:59
+2020-01-21 18:23:59.983  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:23:59
+2020-01-21 18:25:59.991  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:25:59
+2020-01-21 18:27:59.990  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:27:59
+2020-01-21 18:29:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:29:59
+2020-01-21 18:32:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:32:00
+2020-01-21 18:33:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:33:59
+2020-01-21 18:36:00.013  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:36:00
+2020-01-21 18:37:59.989  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:37:59
+2020-01-21 18:39:59.990  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:39:59
+2020-01-21 18:41:59.996  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:41:59
+2020-01-21 18:43:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:43:59
+2020-01-21 18:45:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:45:59
+2020-01-21 18:47:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:47:59
+2020-01-21 18:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:49:59
+2020-01-21 18:51:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:51:59
+2020-01-21 18:54:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:54:00
+2020-01-21 18:56:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:56:00
+2020-01-21 18:58:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 18:58:00
+2020-01-21 19:00:00.012  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:00:00
+2020-01-21 19:02:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:02:00
+2020-01-21 19:04:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:04:00
+2020-01-21 19:06:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:06:00
+2020-01-21 19:08:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:08:00
+2020-01-21 19:10:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:10:00
+2020-01-21 19:12:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:12:00
+2020-01-21 19:14:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:14:00
+2020-01-21 19:16:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:16:00
+2020-01-21 19:18:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:18:00
+2020-01-21 19:20:00.005  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:20:00
+2020-01-21 19:22:00.006  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:22:00
+2020-01-21 19:24:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:24:00
+2020-01-21 19:25:59.983  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:25:59
+2020-01-21 19:27:59.983  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:27:59
+2020-01-21 19:29:59.988  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:29:59
+2020-01-21 19:31:59.993  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:31:59
+2020-01-21 19:33:59.995  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:33:59
+2020-01-21 19:35:59.994  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:35:59
+2020-01-21 19:37:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:37:59
+2020-01-21 19:40:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:39:59
+2020-01-21 19:41:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:41:59
+2020-01-21 19:44:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:44:00
+2020-01-21 19:45:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:45:59
+2020-01-21 19:48:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:48:00
+2020-01-21 19:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:49:59
+2020-01-21 19:51:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:51:59
+2020-01-21 19:54:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:54:00
+2020-01-21 19:55:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:55:59
+2020-01-21 19:57:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:57:59
+2020-01-21 19:59:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 19:59:59
+2020-01-21 20:02:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:02:00
+2020-01-21 20:03:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:03:59
+2020-01-21 20:05:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:05:59
+2020-01-21 20:07:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:07:59
+2020-01-21 20:09:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:09:59
+2020-01-21 20:11:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:11:59
+2020-01-21 20:13:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:13:59
+2020-01-21 20:15:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:15:59
+2020-01-21 20:17:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:17:59
+2020-01-21 20:19:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:19:59
+2020-01-21 20:21:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:21:59
+2020-01-21 20:23:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:23:59
+2020-01-21 20:25:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:25:59
+2020-01-21 20:27:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:27:59
+2020-01-21 20:29:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:29:59
+2020-01-21 20:31:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:31:59
+2020-01-21 20:33:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:33:59
+2020-01-21 20:35:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:35:59
+2020-01-21 20:37:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:37:59
+2020-01-21 20:39:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:39:59
+2020-01-21 20:41:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:41:59
+2020-01-21 20:43:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:43:59
+2020-01-21 20:46:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:46:00
+2020-01-21 20:47:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:47:59
+2020-01-21 20:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:49:59
+2020-01-21 20:52:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:52:00
+2020-01-21 20:54:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:54:00
+2020-01-21 20:56:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:56:00
+2020-01-21 20:57:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:57:59
+2020-01-21 20:59:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 20:59:59
+2020-01-21 21:01:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:01:59
+2020-01-21 21:03:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:03:59
+2020-01-21 21:05:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:05:59
+2020-01-21 21:07:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:07:59
+2020-01-21 21:09:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:09:59
+2020-01-21 21:12:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:12:00
+2020-01-21 21:14:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:14:00
+2020-01-21 21:16:00.003  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:16:00
+2020-01-21 21:18:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:18:00
+2020-01-21 21:20:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:20:00
+2020-01-21 21:22:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:22:00
+2020-01-21 21:24:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:24:00
+2020-01-21 21:25:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:25:59
+2020-01-21 21:27:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:27:59
+2020-01-21 21:29:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:29:59
+2020-01-21 21:31:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:31:59
+2020-01-21 21:33:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:33:59
+2020-01-21 21:36:00.009  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:36:00
+2020-01-21 21:38:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:38:00
+2020-01-21 21:39:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:39:59
+2020-01-21 21:41:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:41:59
+2020-01-21 21:43:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:43:59
+2020-01-21 21:45:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:45:59
+2020-01-21 21:47:59.997  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:47:59
+2020-01-21 21:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:49:59
+2020-01-21 21:51:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:51:59
+2020-01-21 21:53:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:53:59
+2020-01-21 21:55:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:55:59
+2020-01-21 21:57:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 21:57:59
+2020-01-21 22:00:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:00:00
+2020-01-21 22:02:00.007  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:02:00
+2020-01-21 22:04:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:04:00
+2020-01-21 22:06:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:06:00
+2020-01-21 22:08:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:08:00
+2020-01-21 22:10:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:10:00
+2020-01-21 22:12:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:12:00
+2020-01-21 22:14:00.006  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:14:00
+2020-01-21 22:16:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:16:00
+2020-01-21 22:18:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:18:00
+2020-01-21 22:19:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:19:59
+2020-01-21 22:22:00.003  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:22:00
+2020-01-21 22:24:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:24:00
+2020-01-21 22:26:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:26:00
+2020-01-21 22:27:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:27:59
+2020-01-21 22:30:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:30:00
+2020-01-21 22:32:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:32:00
+2020-01-21 22:34:00.013  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:34:00
+2020-01-21 22:36:00.008  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:36:00
+2020-01-21 22:38:00.006  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:38:00
+2020-01-21 22:40:00.005  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:40:00
+2020-01-21 22:41:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:41:59
+2020-01-21 22:43:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:43:59
+2020-01-21 22:45:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:45:59
+2020-01-21 22:48:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:48:00
+2020-01-21 22:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:49:59
+2020-01-21 22:51:59.998  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:51:59
+2020-01-21 22:54:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:54:00
+2020-01-21 22:55:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:55:59
+2020-01-21 22:58:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 22:58:00
+2020-01-21 23:00:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:00:00
+2020-01-21 23:02:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:02:00
+2020-01-21 23:04:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:04:00
+2020-01-21 23:06:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:06:00
+2020-01-21 23:08:00.005  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:08:00
+2020-01-21 23:10:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:10:00
+2020-01-21 23:11:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:11:59
+2020-01-21 23:14:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:14:00
+2020-01-21 23:15:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:15:59
+2020-01-21 23:18:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:18:00
+2020-01-21 23:20:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:20:00
+2020-01-21 23:22:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:22:00
+2020-01-21 23:24:00.002  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:24:00
+2020-01-21 23:26:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:26:00
+2020-01-21 23:28:00.005  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:28:00
+2020-01-21 23:30:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:30:00
+2020-01-21 23:31:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:31:59
+2020-01-21 23:33:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:33:59
+2020-01-21 23:35:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:35:59
+2020-01-21 23:37:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:37:59
+2020-01-21 23:40:00.004  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:40:00
+2020-01-21 23:41:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:41:59
+2020-01-21 23:44:00.000  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:44:00
+2020-01-21 23:45:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:45:59
+2020-01-21 23:48:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:48:00
+2020-01-21 23:49:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:49:59
+2020-01-21 23:52:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:52:00
+2020-01-21 23:53:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:53:59
+2020-01-21 23:56:00.001  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:56:00
+2020-01-21 23:57:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:57:59
+2020-01-21 23:59:59.999  INFO 8332 --- [scheduling-1] c.c.a.s.s.SaraCaptacaoAutomaticaSchedule : Teste de schedule :: Execution Time - 23:59:59
