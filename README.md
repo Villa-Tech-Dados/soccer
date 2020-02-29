@@ -1,2 +1,3 @@
-# betfair.api.soccer
-API para avaliação de dados - soccer 
+# sara-atendimento
+
+Serviço responsável pelos atendimentos.
