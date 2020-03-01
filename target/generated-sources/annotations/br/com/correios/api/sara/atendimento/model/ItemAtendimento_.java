@@ -6,6 +6,8 @@ import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
+import com.betfair.api.soccer.model.ItemAtendimento;
+
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(ItemAtendimento.class)
 public abstract class ItemAtendimento_ {

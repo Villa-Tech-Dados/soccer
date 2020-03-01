@@ -1,11 +1,11 @@
 server:
-  port: 9071 #9071  # utilize a porta "9" + api.id (numero da api). Tamanho de 4, complete com zero o número da api. 
+  port: 9091 #9091 
 #  use-forward-headers: true
   forward-headers-strategy: native
  
 #------ API -------------------------------------------------------------------------------------------
 api: 
-  id: 71 #71 # Quando for para os ambientes de DEV/HOM/PROD informar o código da API registrado no sistema GCS.
+  id: 0 #71 # Quando for para os ambientes de DEV/HOM/PROD informar o código da API registrado no sistema GCS.
   nome: '@project.name@'
   versao: '@project.version@'
   service-id: '@project.artifactId@'
@@ -31,7 +31,8 @@ spring:
     
   jpa:
     properties:
-      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
       hibernate.jdbc.batch_size: 50
       hibernate.type: trace
       hibernate.use_sql_comments: true

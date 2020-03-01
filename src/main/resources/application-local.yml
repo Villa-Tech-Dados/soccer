@@ -11,12 +11,12 @@ api:
 spring:         
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:oracle:thin:@scan-ac07.correiosnet.int:1521/ac07
-    username: sarahom
-    password: sr2005 
+    url: jdbc:postgresql://localhost:5432/socceer_db
+    username: postgres
+    password: 123456 
   jpa:
     properties:
-      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
       hibernate.jdbc.batch_size: 50
       hibernate.type: trace
       hibernate.use_sql_comments: true
@@ -37,8 +37,8 @@ spring:
         prefer-ip-address: true 
         health-check-critical-timeout: 10m
                      
-  redis:
-    url: redis://localhost:6379
+#  redis:
+#    url: redis://localhost:6379
     
 #    host: kuberneteshom.correios.com.br
 #    port: 30845
@@ -55,5 +55,5 @@ logging:
     br.com.correios.api.sara-atendimento: DEBUG
     net.javacrumbs.shedlock: DEBUG
   file:
-    name: sara-atendimento.log
+    name: soccer.log
     
