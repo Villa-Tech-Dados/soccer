@@ -14,7 +14,6 @@ import org.springframework.data.jpa.domain.Specification;
 
 import com.betfair.api.soccer.model.Clube;
 
-import br.com.correios.api.sara.atendimento.model.Clube_;
 
 @SuppressWarnings("serial")
 public class ClubeSpecification implements Specification<Clube> {

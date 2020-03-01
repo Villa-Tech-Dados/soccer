@@ -11,7 +11,7 @@ api:
 spring:         
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/socceer_db
+    url: jdbc:postgresql://localhost:5432/soccer_db
     username: postgres
     password: 123456 
   jpa:

@@ -26,43 +26,39 @@ public class ClubeService {
 	private Logger log = LoggerFactory.getLogger(ClubeService.class);
 
 	@Autowired
-	private ClubeRepository atendimentoRepository;
+	private ClubeRepository clubeRepository;
 	@Autowired
 	private Environment environment;
 	@Autowired
 	private ObjectMapper mapper;
-	@Autowired
-	private UsuarioService usuarioService;
-	@Autowired
-	private CaixaService caixaService;
 	
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public Optional<Clube> consultaObjetoClube(Long nuObjetoClube) {
-		Optional<Clube> result = atendimentoRepository.findById(nuObjetoClube);
+		Optional<Clube> result = clubeRepository.findById(nuObjetoClube);
 		return result;
 	}
 
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public Optional<Clube> consultaObjetoClubeComRedis(Integer nuObjetoClube) {
 		Optional<Clube> result = null;
-		result = atendimentoRepository.findById(nuObjetoClube);
+		result = clubeRepository.findById(nuObjetoClube);
 		return result;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void salva(Clube objetoClube) {
-		Optional<Clube> exists = atendimentoRepository.findById(objetoClube.getId());
+		Optional<Clube> exists = clubeRepository.findById(objetoClube.getId());
 		if (exists.isPresent()) {
 			throw new RuntimeException(environment.getProperty("Clube.jaExistente"));
 		}
-		atendimentoRepository.save(objetoClube);
+		clubeRepository.save(objetoClube);
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void atualiza(Clube objetoClube) {
-		Optional<Clube> exists = this.atendimentoRepository.findById(objetoClube.getId());
+		Optional<Clube> exists = this.clubeRepository.findById(objetoClube.getId());
 		if (exists.isPresent()) {
-			atendimentoRepository.save(objetoClube);
+			clubeRepository.save(objetoClube);
 		} else {
 			throw new RuntimeException(environment.getProperty("Clube.naoEncontradoParaAtualizacao"));
 		}
@@ -70,9 +66,9 @@ public class ClubeService {
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void remove(Integer nuObjetoClube) {
-		Optional<Clube> exists = this.atendimentoRepository.findById(nuObjetoClube);
+		Optional<Clube> exists = this.clubeRepository.findById(nuObjetoClube);
 		if (exists.isPresent()) {
-			atendimentoRepository.deleteById(nuObjetoClube);
+			clubeRepository.deleteById(nuObjetoClube);
 		} else {
 			throw new RuntimeException(environment.getProperty("Clube.naoEncontradoParaExclusao"));
 		}
@@ -81,12 +77,7 @@ public class ClubeService {
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public List<Clube> findAll(Long id, Long mcu, String[] sort) {
 		Specification<Clube> specs = new ClubeSpecification(id, mcu);
-		List<Clube> result = atendimentoRepository.findAll(specs, sort);
-		try {
-			log.info("ObjetoClube: {}", mapper.writeValueAsString(result));
-		} catch (Exception ignored) {
-		}
-		return result;
+		return null;
 	}
 
 	

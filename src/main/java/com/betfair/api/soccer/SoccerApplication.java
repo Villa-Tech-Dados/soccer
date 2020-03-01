@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.cloud.openfeign.hateoas.FeignHalAutoConfiguration;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
@@ -16,18 +14,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.filter.ForwardedHeaderFilter;
 
-import br.com.correios.api.gcssynch.EnableGcs;
 
 
-@EnableAutoConfiguration(exclude={FeignHalAutoConfiguration.class}) // TODO: Para o swagger rodar no springboot 2.0.0
 
 
-@EnableScheduling
-@EnableFeignClients
-@EnableGcs
-@EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages= {"br.com.correios.api.commons", "br.com.correios.api.sara.atendimento"})  //"br.com.correios.api.leader"
-@PropertySources({@PropertySource("classpath:messages.properties"), @PropertySource("classpath:commons-mensagens.properties") })
+@SpringBootApplication(scanBasePackages= {"com.betfair.api.soccer"})  //"br.com.correios.api.leader"
 public class SoccerApplication {
 
 
