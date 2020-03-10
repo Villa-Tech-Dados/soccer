@@ -6,13 +6,9 @@ api:
 #------ Spring ---------------------------------------------------------------------------------------------------
 spring:    
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:oracle:thin:@scan-ac04.correiosnet.int:1521/ac04
     username: saradmconsulta
     password: #<via kubernetes>
-    hikari: 
-      maximum-pool-size: 20
-      pool-name: pool-sara
   
   cloud:
     consul:

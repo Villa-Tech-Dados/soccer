@@ -1,6 +1,5 @@
 package com.betfair.api.soccer.service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,16 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.betfair.api.soccer.model.Clube;
 import com.betfair.api.soccer.repository.ClubeRepository;
-import com.betfair.api.soccer.specification.ClubeSpecification;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 @Service
@@ -27,10 +22,9 @@ public class ClubeService {
 
 	@Autowired
 	private ClubeRepository clubeRepository;
+	
 	@Autowired
 	private Environment environment;
-	@Autowired
-	private ObjectMapper mapper;
 	
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public Optional<Clube> consultaObjetoClube(Long nuObjetoClube) {
@@ -75,8 +69,8 @@ public class ClubeService {
 	}
 
 	@Transactional(propagation = Propagation.SUPPORTS)
-	public List<Clube> findAll(Long id, Long mcu, String[] sort) {
-		Specification<Clube> specs = new ClubeSpecification(id, mcu);
+	public List<Clube> findAll(Long id, String[] sort) {
+//		Specification<Clube> specs = new ClubeSpecification(id);
 		return null;
 	}
 

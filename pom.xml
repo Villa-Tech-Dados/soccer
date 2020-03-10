@@ -17,15 +17,10 @@
 	<description>API de dados - soccer</description>
 
 	<properties>
-		<java.version>1.11</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -60,20 +55,16 @@
 			<version>20180813</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-commons</artifactId>
-			<version>1.0.0.RELEASE</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-jpamodelgen</artifactId>
+			<exclusions>
+				<exclusion>  <!-- Para funcionar as chamadas SOAP -->
+					<groupId>org.glassfish.jaxb</groupId>
+					<artifactId>jaxb-runtime</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-
-<!-- 		<dependency> -->
-<!-- 			<groupId>io.springfox</groupId> -->
-<!-- 			<artifactId>springfox-swagger2</artifactId> -->
-<!-- 			<version>2.9.1</version> -->
-<!-- 		</dependency> -->
-
-
 
 	</dependencies>
 
@@ -83,6 +74,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<compilerArguments>
+						<processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
+					</compilerArguments>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

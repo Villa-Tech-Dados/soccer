@@ -16,11 +16,6 @@ info:
     ambiente: ${api.ambiente-publicacao}
     git: https://gitlab.correios.com.br/apis/sara/sara-atendimento.git
     
-# -- Schedule -------------------------------------------------------------------------------------------    
-schedule:
-  sara-atendimento:
-    execute: '0 0/2 * * * ?'  # a cada dois é executado
-           
 #------ Spring -------------------------------------------------------------------------------------------------------------- 
 spring:
   application:

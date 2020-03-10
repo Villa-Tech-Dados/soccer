@@ -1,9 +1,7 @@
 package com.betfair.api.soccer.specification;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -13,18 +11,18 @@ import javax.persistence.criteria.Root;
 import org.springframework.data.jpa.domain.Specification;
 
 import com.betfair.api.soccer.model.Clube;
+import com.betfair.api.soccer.model.Clube_;
+
 
 
 @SuppressWarnings("serial")
 public class ClubeSpecification implements Specification<Clube> {
 
 	private Long id;
-	private Long mcu;
 
-	public ClubeSpecification(Long id, Long mcu) {
+	public ClubeSpecification(Long id) {
 		super();
 		this.id = id;
-		this.mcu = mcu;
 	}
 
 	//Sem uso de lambda
@@ -37,37 +35,14 @@ public class ClubeSpecification implements Specification<Clube> {
 //		};
 //	}
 
-	public static Specification<Clube> whereMCU(Long mcu) {
+	public static Specification<Clube> whereNome(String nome) {
 		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.equal(root.get(Clube_.mcu), mcu);
+			return criteriaBuilder.equal(root.get(Clube_.nome), nome);
 		};
 	}
 
-	public static Specification<Clube> whereIsVigente() {
-		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			LocalDateTime dataAtual = LocalDateTime.now();
-			dataAtual = dataAtual.minusDays(Integer.valueOf(30)); 
-			return criteriaBuilder.greaterThanOrEqualTo(root.get(Clube_.dataInicioClube), dataAtual);
-		};
-	}
 	
-	public static Specification<Clube> whereCaixa(List<Long> idCaixaList) {
-		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.isTrue(root.get(Clube_.numeroDoCaixa).in(idCaixaList));
-		};
-	}
 	
-	public static Specification<Clube> whereCaixa(Long idCaixa) {
-		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.equal(root.get(Clube_.numeroDoCaixa), idCaixa);
-		};
-	}
-	
-	public static Specification<Clube> whereIsPendente() {
-		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.isNull(root.get(Clube_.dataFinalClube));
-		};
-	}
 	
 	@Override
 	public Predicate toPredicate(Root<Clube> root, CriteriaQuery<?> query,
@@ -78,17 +53,6 @@ public class ClubeSpecification implements Specification<Clube> {
 			predicates.add(p);
 		}
 
-		if (this.mcu != null) {
-			Predicate p = criteriaBuilder.equal(root.get(Clube_.mcu), mcu);
-			predicates.add(p);
-		}
-		
-		//Vigente
-		LocalDateTime dataAtual = LocalDateTime.now();
-		dataAtual = dataAtual.minusDays(Integer.valueOf(30)); 
-		Predicate p =  criteriaBuilder.greaterThanOrEqualTo(root.get(Clube_.dataInicioClube), dataAtual);
-		predicates.add(p);
-		
 		Predicate[] array = predicates.toArray(new Predicate[predicates.size()]);
 
 		return criteriaBuilder.and(array);

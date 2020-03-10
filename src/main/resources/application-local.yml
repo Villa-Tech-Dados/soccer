@@ -2,41 +2,20 @@ api:
   ambiente-publicacao: LOCAL
   password: sr89787hom
   
-  client:
-    url-email: https://jhom2.correiosnet.int/mensagens/v1/emails
-    url-preco: https://apides.correios.com.br/preco
-    url-idautorizacao-usuario: https://jhom2.correiosnet.int/idCorreiosWS-v1.2/idAutorizadorUsuario/idAutorizadorUsuarioService
-  
 #------ Spring -------------------------------------------------------------------------------------------
 spring:         
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/soccer_db
     username: postgres
     password: 123456 
+
   jpa:
     properties:
-      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-      hibernate.jdbc.batch_size: 50
-      hibernate.type: trace
-      hibernate.use_sql_comments: true
-      hibernate.showsql: true      
-      hibernate.format_sql: true   
-    
-  cloud:
-    inetutils:
-      preferred-networks:
-      - eth0
-    consul:
-      enabled: false  # habilita para o uso do CONSUL local
-      host: localhost
-      port: 8500
-      discovery: 
-        instanceId: ${api.service-id}
-        serviceName: ${api.service-id}
-        prefer-ip-address: true 
-        health-check-critical-timeout: 10m
-                     
+      hibernate.dialect: org.hibernate.dialect.PostgreSQL9Dialect
+      hibernate.ddl-auto: update
+      hibernate.temp.use_jdbc_metadata_defaults: false
+      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
 #  redis:
 #    url: redis://localhost:6379
     
@@ -52,7 +31,7 @@ logging:
   level:
     root: INFO
     org.hibernate.SQL: DEBUG
-    br.com.correios.api.sara-atendimento: DEBUG
+    com.betfair.api.soccer: DEBUG
     net.javacrumbs.shedlock: DEBUG
   file:
     name: soccer.log

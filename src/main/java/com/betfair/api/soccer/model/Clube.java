@@ -32,24 +32,20 @@ public class Clube implements Serializable{
 			)
 	private Long id;
 	
-	@Column(columnDefinition = "text")
+	@Column(name = "nome")
 	private String nome;
 	
-//	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-//    @JoinColumn(name = "question_id", nullable = false)
-//    @OnDelete(action = OnDeleteAction.CASCADE)
-//	@JsonIgnore
-	@Column(columnDefinition = "bigint")
+	@Column(name = "pais")
 	private Long pais;
 
 	public Clube() {
 	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome.toUpperCase();
+
+	public Clube(Long id, String nome, Long pais) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.pais = pais;
 	}
 
 	public Long getId() {
@@ -60,6 +56,14 @@ public class Clube implements Serializable{
 		this.id = id;
 	}
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
 	public Long getPais() {
 		return pais;
 	}
@@ -67,5 +71,6 @@ public class Clube implements Serializable{
 	public void setPais(Long pais) {
 		this.pais = pais;
 	}
+	
 	
 }
