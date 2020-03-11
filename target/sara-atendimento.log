@@ -1,119 +1,43 @@
-2020-03-07 17:21:14.719  INFO 23753 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 23753 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:21:14.724 DEBUG 23753 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:21:14.732  INFO 23753 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:21:14.809  INFO 23753 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c8bca63: startup date [Sat Mar 07 17:21:14 BRT 2020]; root of context hierarchy
-2020-03-07 17:21:17.131  INFO 23753 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3bf8820d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:21:17.249  INFO 23753 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1a2488de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:21:17.475  INFO 23753 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:21:17.529  INFO 23753 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$758cc3df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:21:18.182  INFO 23753 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:21:18.268  INFO 23753 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:21:18.269  INFO 23753 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:21:18.279  INFO 23753 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:21:18.479  INFO 23753 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:21:18.480  INFO 23753 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3670 ms
-2020-03-07 17:21:18.738  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:21:18.739  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:21:18.740  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:21:18.740  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:21:18.740  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:21:18.741  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:21:18.743  INFO 23753 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:21:18.820  WARN 23753 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clubeController' defined in file [/home/villa/git/betfair/soccer/target/classes/com/betfair/api/soccer/controller/ClubeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.betfair.api.soccer.controller.ClubeController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@512ddf17]
-2020-03-07 17:21:18.824  INFO 23753 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:21:18.923  INFO 23753 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:21:18.973 ERROR 23753 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clubeController' defined in file [/home/villa/git/betfair/soccer/target/classes/com/betfair/api/soccer/controller/ClubeController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.betfair.api.soccer.controller.ClubeController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@512ddf17]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.betfair.api.soccer.SoccerApplication.main(SoccerApplication.java:16)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.betfair.api.soccer.controller.ClubeController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@512ddf17]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:758)
-	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:690)
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:410)
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:394)
-	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:332)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1016)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
-	... 15 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: org/springframework/hateoas/ResourceAssembler
-	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
-	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3061)
-	at java.base/java.lang.Class.getDeclaredFields(Class.java:2248)
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:753)
-	... 21 common frames omitted
-Caused by: java.lang.ClassNotFoundException: org.springframework.hateoas.ResourceAssembler
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	... 34 common frames omitted
-
-2020-03-07 17:24:23.795  INFO 24101 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 24101 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:24:23.802 DEBUG 24101 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:24:23.815  INFO 24101 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:24:23.950  INFO 24101 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69637b10: startup date [Sat Mar 07 17:24:23 BRT 2020]; root of context hierarchy
-2020-03-07 17:24:25.766  INFO 24101 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ffcf229a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:24:25.876  INFO 24101 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ddfb296b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:24:25.947  INFO 24101 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:24:26.030  INFO 24101 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3963646c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:24:26.484  INFO 24101 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:24:26.526  INFO 24101 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:24:26.527  INFO 24101 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:24:26.545  INFO 24101 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:24:26.785  INFO 24101 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:24:26.786  INFO 24101 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2836 ms
-2020-03-07 17:24:27.150  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:24:27.152  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:24:27.156  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:24:27.156  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:24:27.157  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:24:27.157  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:24:27.160  INFO 24101 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:24:27.551  INFO 24101 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-07 17:24:27.758  INFO 24101 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-07 17:24:27.880  INFO 24101 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-07 17:24:27.902  INFO 24101 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2020-03-10 19:54:48.261  INFO 8318 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 8318 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
+2020-03-10 19:54:48.272 DEBUG 8318 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2020-03-10 19:54:48.275  INFO 8318 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
+2020-03-10 19:54:48.361  INFO 8318 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bb75258: startup date [Tue Mar 10 19:54:48 BRT 2020]; root of context hierarchy
+2020-03-10 19:54:50.504  INFO 8318 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a44facb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 19:54:50.571  INFO 8318 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-10 19:54:50.638  INFO 8318 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ffb7e7b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 19:54:51.087  INFO 8318 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-03-10 19:54:51.120  INFO 8318 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-10 19:54:51.120  INFO 8318 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-10 19:54:51.129  INFO 8318 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-10 19:54:51.273  INFO 8318 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-10 19:54:51.273  INFO 8318 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2912 ms
+2020-03-10 19:54:51.503  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-10 19:54:51.504  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-10 19:54:51.504  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-10 19:54:51.504  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-10 19:54:51.505  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
+2020-03-10 19:54:51.505  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-10 19:54:51.507  INFO 8318 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2020-03-10 19:54:51.712  INFO 8318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-10 19:54:51.829  INFO 8318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-10 19:54:51.901  INFO 8318 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-10 19:54:51.923  INFO 8318 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-03-07 17:24:28.021  INFO 24101 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2020-03-07 17:24:28.024  INFO 24101 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2020-03-07 17:24:28.094  INFO 24101 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-07 17:24:28.279  INFO 24101 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2020-03-07 17:24:28.301  INFO 24101 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2020-03-07 17:24:28.304  INFO 24101 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@52ba685a
-2020-03-07 17:24:29.170  WARN 24101 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-2020-03-07 17:24:29.172  INFO 24101 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-03-07 17:24:29.192  INFO 24101 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-03-07 17:24:29.198  INFO 24101 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:24:29.227  INFO 24101 --- [main] ConditionEvaluationReportLoggingListener : 
+2020-03-10 19:54:52.097  INFO 8318 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-10 19:54:52.101  INFO 8318 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-10 19:54:52.176  INFO 8318 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-10 19:54:52.352  INFO 8318 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-03-10 19:54:52.378  INFO 8318 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2020-03-10 19:54:52.381  INFO 8318 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@320be73
+2020-03-10 19:54:52.855  WARN 8318 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2020-03-10 19:54:52.855  INFO 8318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-10 19:54:52.875  INFO 8318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-10 19:54:52.880  INFO 8318 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-10 19:54:52.908  INFO 8318 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:24:29.240 ERROR 24101 --- [main] o.s.boot.SpringApplication               : Application run failed
+2020-03-10 19:54:52.919 ERROR 8318 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
@@ -186,46 +110,46 @@ Caused by: java.lang.NullPointerException: null
 	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:58)
 	... 42 common frames omitted
 
-2020-03-07 17:25:37.359  INFO 24285 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 24285 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:25:37.365 DEBUG 24285 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:25:37.368  INFO 24285 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:25:37.457  INFO 24285 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b43529a: startup date [Sat Mar 07 17:25:37 BRT 2020]; root of context hierarchy
-2020-03-07 17:25:39.056  INFO 24285 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$891deb54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:25:39.123  INFO 24285 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:25:39.187  INFO 24285 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4862655] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:25:39.711  INFO 24285 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:25:39.748  INFO 24285 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:25:39.749  INFO 24285 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:25:39.757  INFO 24285 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:25:39.920  INFO 24285 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:25:39.921  INFO 24285 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2465 ms
-2020-03-07 17:25:40.118  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:25:40.119  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:25:40.120  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:25:40.120  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:25:40.121  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:25:40.121  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:25:40.123  INFO 24285 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:25:40.345  INFO 24285 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-07 17:25:40.599  INFO 24285 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-07 17:25:40.664  INFO 24285 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-07 17:25:40.682  INFO 24285 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2020-03-10 20:00:16.389  INFO 8855 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 8855 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
+2020-03-10 20:00:16.395 DEBUG 8855 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2020-03-10 20:00:16.397  INFO 8855 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
+2020-03-10 20:00:16.477  INFO 8855 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75e01201: startup date [Tue Mar 10 20:00:16 BRT 2020]; root of context hierarchy
+2020-03-10 20:00:18.281  INFO 8855 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9f75ae14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:00:18.332  INFO 8855 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-10 20:00:18.379  INFO 8855 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fadde915] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:00:18.857  INFO 8855 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-03-10 20:00:18.894  INFO 8855 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-10 20:00:18.894  INFO 8855 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-10 20:00:18.903  INFO 8855 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-10 20:00:19.034  INFO 8855 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-10 20:00:19.034  INFO 8855 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2557 ms
+2020-03-10 20:00:19.246  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-10 20:00:19.247  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-10 20:00:19.248  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-10 20:00:19.248  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-10 20:00:19.249  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
+2020-03-10 20:00:19.249  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-10 20:00:19.251  INFO 8855 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2020-03-10 20:00:19.462  INFO 8855 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-10 20:00:19.556  INFO 8855 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-10 20:00:19.624  INFO 8855 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-10 20:00:19.640  INFO 8855 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-03-07 17:25:40.792  INFO 24285 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2020-03-07 17:25:40.795  INFO 24285 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2020-03-07 17:25:40.854  INFO 24285 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-07 17:25:40.996  INFO 24285 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2020-03-07 17:25:41.015  INFO 24285 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2020-03-07 17:25:41.017  INFO 24285 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@118041c7
-2020-03-07 17:25:41.386  WARN 24285 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-2020-03-07 17:25:41.386  INFO 24285 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-03-07 17:25:41.408  INFO 24285 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-03-07 17:25:41.413  INFO 24285 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:25:41.442  INFO 24285 --- [main] ConditionEvaluationReportLoggingListener : 
+2020-03-10 20:00:19.758  INFO 8855 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-10 20:00:19.760  INFO 8855 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-10 20:00:19.811  INFO 8855 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-10 20:00:19.945  INFO 8855 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-03-10 20:00:19.966  INFO 8855 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2020-03-10 20:00:19.969  INFO 8855 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b0dbfb
+2020-03-10 20:00:20.369  WARN 8855 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2020-03-10 20:00:20.370  INFO 8855 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-10 20:00:20.391  INFO 8855 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-10 20:00:20.395  INFO 8855 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-10 20:00:20.420  INFO 8855 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:25:41.454 ERROR 24285 --- [main] o.s.boot.SpringApplication               : Application run failed
+2020-03-10 20:00:20.430 ERROR 8855 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
@@ -298,46 +222,46 @@ Caused by: java.lang.NullPointerException: null
 	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:58)
 	... 42 common frames omitted
 
-2020-03-07 17:26:29.946  INFO 24403 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 24403 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:26:29.952 DEBUG 24403 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:26:29.954  INFO 24403 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:26:30.030  INFO 24403 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c260bdc: startup date [Sat Mar 07 17:26:30 BRT 2020]; root of context hierarchy
-2020-03-07 17:26:31.648  INFO 24403 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$78ab78b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:26:31.713  INFO 24403 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:26:31.772  INFO 24403 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d413b3b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:26:32.344  INFO 24403 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:26:32.386  INFO 24403 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:26:32.387  INFO 24403 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:26:32.396  INFO 24403 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:26:32.534  INFO 24403 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:26:32.535  INFO 24403 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2506 ms
-2020-03-07 17:26:32.781  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:26:32.782  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:26:32.783  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:26:32.783  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:26:32.783  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:26:32.784  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:26:32.786  INFO 24403 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:26:33.041  INFO 24403 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-07 17:26:33.146  INFO 24403 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-07 17:26:33.218  INFO 24403 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-07 17:26:33.236  INFO 24403 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2020-03-10 20:02:25.433  INFO 9110 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 9110 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
+2020-03-10 20:02:25.439 DEBUG 9110 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2020-03-10 20:02:25.442  INFO 9110 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
+2020-03-10 20:02:25.526  INFO 9110 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50fe837a: startup date [Tue Mar 10 20:02:25 BRT 2020]; root of context hierarchy
+2020-03-10 20:02:27.172  INFO 9110 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8cdd7963] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:02:27.259  INFO 9110 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-10 20:02:27.307  INFO 9110 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e845b464] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:02:27.770  INFO 9110 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-03-10 20:02:27.804  INFO 9110 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-10 20:02:27.804  INFO 9110 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-10 20:02:27.813  INFO 9110 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-10 20:02:27.940  INFO 9110 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-10 20:02:27.941  INFO 9110 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2415 ms
+2020-03-10 20:02:28.202  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-10 20:02:28.204  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-10 20:02:28.204  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-10 20:02:28.205  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-10 20:02:28.205  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
+2020-03-10 20:02:28.206  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-10 20:02:28.208  INFO 9110 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2020-03-10 20:02:28.441  INFO 9110 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-10 20:02:28.532  INFO 9110 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-10 20:02:28.596  INFO 9110 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-10 20:02:28.611  INFO 9110 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-03-07 17:26:33.354  INFO 24403 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2020-03-07 17:26:33.356  INFO 24403 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2020-03-07 17:26:33.418  INFO 24403 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-07 17:26:33.566  INFO 24403 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2020-03-07 17:26:33.588  INFO 24403 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2020-03-07 17:26:33.591  INFO 24403 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@b5aa65b
-2020-03-07 17:26:33.998  WARN 24403 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-2020-03-07 17:26:33.999  INFO 24403 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-03-07 17:26:34.021  INFO 24403 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-03-07 17:26:34.025  INFO 24403 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:26:34.051  INFO 24403 --- [main] ConditionEvaluationReportLoggingListener : 
+2020-03-10 20:02:28.716  INFO 9110 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-10 20:02:28.719  INFO 9110 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-10 20:02:28.786  INFO 9110 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-10 20:02:28.933  INFO 9110 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-03-10 20:02:28.957  INFO 9110 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2020-03-10 20:02:28.960  INFO 9110 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b1e88f
+2020-03-10 20:02:29.367  WARN 9110 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2020-03-10 20:02:29.368  INFO 9110 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-10 20:02:29.392  INFO 9110 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-10 20:02:29.396  INFO 9110 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-10 20:02:29.424  INFO 9110 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:26:34.062 ERROR 24403 --- [main] o.s.boot.SpringApplication               : Application run failed
+2020-03-10 20:02:29.435 ERROR 9110 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
@@ -410,158 +334,46 @@ Caused by: java.lang.NullPointerException: null
 	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:58)
 	... 42 common frames omitted
 
-2020-03-07 17:34:09.493  INFO 24908 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 24908 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:34:09.499 DEBUG 24908 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:34:09.501  INFO 24908 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:34:09.614  INFO 24908 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c435123: startup date [Sat Mar 07 17:34:09 BRT 2020]; root of context hierarchy
-2020-03-07 17:34:11.254  INFO 24908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$347e83f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:34:11.319  INFO 24908 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:34:11.385  INFO 24908 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8fe6bef4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:34:11.937  INFO 24908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:34:11.990  INFO 24908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:34:11.990  INFO 24908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:34:11.999  INFO 24908 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:34:12.130  INFO 24908 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:34:12.131  INFO 24908 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2517 ms
-2020-03-07 17:34:12.329  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:34:12.330  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:34:12.331  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:34:12.331  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:34:12.332  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:34:12.333  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:34:12.335  INFO 24908 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:34:12.577  INFO 24908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-07 17:34:12.666  INFO 24908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-07 17:34:12.736  INFO 24908 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-07 17:34:12.754  INFO 24908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2020-03-10 20:03:10.544  INFO 9227 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 9227 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
+2020-03-10 20:03:10.550 DEBUG 9227 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2020-03-10 20:03:10.552  INFO 9227 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
+2020-03-10 20:03:10.610  INFO 9227 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bb75258: startup date [Tue Mar 10 20:03:10 BRT 2020]; root of context hierarchy
+2020-03-10 20:03:12.177  INFO 9227 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7d810ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:03:12.250  INFO 9227 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-03-10 20:03:12.305  INFO 9227 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8e945e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 20:03:12.777  INFO 9227 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-03-10 20:03:12.811  INFO 9227 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-10 20:03:12.812  INFO 9227 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2020-03-10 20:03:12.821  INFO 9227 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2020-03-10 20:03:12.952  INFO 9227 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-10 20:03:12.953  INFO 9227 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2343 ms
+2020-03-10 20:03:13.212  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-10 20:03:13.214  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-10 20:03:13.215  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-10 20:03:13.216  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-10 20:03:13.217  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
+2020-03-10 20:03:13.217  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-03-10 20:03:13.220  INFO 9227 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2020-03-10 20:03:13.459  INFO 9227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-10 20:03:13.551  INFO 9227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-10 20:03:13.617  INFO 9227 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-03-10 20:03:13.636  INFO 9227 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2020-03-07 17:34:12.866  INFO 24908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2020-03-07 17:34:12.868  INFO 24908 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2020-03-07 17:34:12.929  INFO 24908 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-07 17:34:13.068  INFO 24908 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2020-03-07 17:34:13.086  INFO 24908 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2020-03-07 17:34:13.089  INFO 24908 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@78e68401
-2020-03-07 17:34:13.467  WARN 24908 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-2020-03-07 17:34:13.468  INFO 24908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-03-07 17:34:13.492  INFO 24908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-03-07 17:34:13.496  INFO 24908 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:34:13.523  INFO 24908 --- [main] ConditionEvaluationReportLoggingListener : 
+2020-03-10 20:03:13.737  INFO 9227 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2020-03-10 20:03:13.740  INFO 9227 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-10 20:03:13.793  INFO 9227 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-03-10 20:03:13.944  INFO 9227 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2020-03-10 20:03:13.963  INFO 9227 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2020-03-10 20:03:13.965  INFO 9227 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@58f254b1
+2020-03-10 20:03:14.346  WARN 9227 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2020-03-10 20:03:14.346  INFO 9227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-10 20:03:14.377  INFO 9227 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-10 20:03:14.381  INFO 9227 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-10 20:03:14.409  INFO 9227 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:34:13.534 ERROR 24908 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.betfair.api.soccer.SoccerApplication.main(SoccerApplication.java:16)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
-	... 16 common frames omitted
-Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:123)
-	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:77)
-	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:128)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:300)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
-	... 20 common frames omitted
-Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
-	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:91)
-	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:116)
-	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:382)
-	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:519)
-	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:124)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:96)
-	... 28 common frames omitted
-Caused by: java.lang.reflect.InvocationTargetException: null
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:88)
-	... 37 common frames omitted
-Caused by: java.lang.NullPointerException: null
-	at javassist.util.proxy.SecurityActions.setAccessible(SecurityActions.java:103)
-	at javassist.util.proxy.DefineClassHelper.toClass3(DefineClassHelper.java:151)
-	at javassist.util.proxy.DefineClassHelper.toClass2(DefineClassHelper.java:134)
-	at javassist.util.proxy.DefineClassHelper.toClass(DefineClassHelper.java:95)
-	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:131)
-	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:530)
-	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:515)
-	at javassist.util.proxy.ProxyFactory.createClass1(ProxyFactory.java:451)
-	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:422)
-	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:75)
-	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:162)
-	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:156)
-	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:58)
-	... 42 common frames omitted
-
-2020-03-07 17:34:43.390  INFO 25025 --- [main] c.betfair.api.soccer.SoccerApplication   : Starting SoccerApplication on villa-linux with PID 25025 (/home/villa/git/betfair/soccer/target/classes started by villa in /home/villa/git/betfair/soccer)
-2020-03-07 17:34:43.396 DEBUG 25025 --- [main] c.betfair.api.soccer.SoccerApplication   : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2020-03-07 17:34:43.398  INFO 25025 --- [main] c.betfair.api.soccer.SoccerApplication   : The following profiles are active: local
-2020-03-07 17:34:43.475  INFO 25025 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c260bdc: startup date [Sat Mar 07 17:34:43 BRT 2020]; root of context hierarchy
-2020-03-07 17:34:45.104  INFO 25025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ff8c2f1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:34:45.173  INFO 25025 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2020-03-07 17:34:45.240  INFO 25025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5af46a1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-07 17:34:45.984  INFO 25025 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
-2020-03-07 17:34:46.023  INFO 25025 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-07 17:34:46.024  INFO 25025 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2020-03-07 17:34:46.035  INFO 25025 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
-2020-03-07 17:34:46.173  INFO 25025 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-07 17:34:46.174  INFO 25025 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2700 ms
-2020-03-07 17:34:46.392  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2020-03-07 17:34:46.393  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2020-03-07 17:34:46.393  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2020-03-07 17:34:46.394  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2020-03-07 17:34:46.394  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'forwardedHeaderFilter' to: [/*]
-2020-03-07 17:34:46.395  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2020-03-07 17:34:46.397  INFO 25025 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
-2020-03-07 17:34:46.828  INFO 25025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-07 17:34:46.963  INFO 25025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-07 17:34:47.040  INFO 25025 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2020-03-07 17:34:47.056  INFO 25025 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2020-03-07 17:34:47.162  INFO 25025 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2020-03-07 17:34:47.165  INFO 25025 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2020-03-07 17:34:47.222  INFO 25025 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2020-03-07 17:34:47.360  INFO 25025 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-2020-03-07 17:34:47.382  INFO 25025 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2020-03-07 17:34:47.385  INFO 25025 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3e856100
-2020-03-07 17:34:47.754  WARN 25025 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
-2020-03-07 17:34:47.755  INFO 25025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-03-07 17:34:47.783  INFO 25025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-03-07 17:34:47.788  INFO 25025 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-03-07 17:34:47.817  INFO 25025 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-07 17:34:47.828 ERROR 25025 --- [main] o.s.boot.SpringApplication               : Application run failed
+2020-03-10 20:03:14.419 ERROR 9227 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)

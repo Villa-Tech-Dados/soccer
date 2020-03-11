@@ -25,24 +25,11 @@ public class ClubeSpecification implements Specification<Clube> {
 		this.id = id;
 	}
 
-	//Sem uso de lambda
-//	private static Specification<Clube> isLongTermCustomer() {
-//		return new Specification<Clube>() {
-//			public Predicate toPredicate(Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder builder) {
-//				LocalDate date = null;//new LocalDate(0, 0, 0);
-//				return builder.lessThan(root.get(Clube_.DATA_INICIO_EXECUCAO), date);
-//			}
-//		};
-//	}
-
 	public static Specification<Clube> whereNome(String nome) {
 		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
 			return criteriaBuilder.equal(root.get(Clube_.nome), nome);
 		};
 	}
-
-	
-	
 	
 	@Override
 	public Predicate toPredicate(Root<Clube> root, CriteriaQuery<?> query,
