@@ -1,0 +1,10 @@
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/controller/ClubeController.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/ClubesCodificadosQueueSender.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/CodificarClubesQueueConsumer.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/util/ArrayUtil.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/model/Clube.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/ClubesApiApplication.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/service/ClubeService.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/service/ClubeServiceImpl.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/model/Pais.java
+/home/villa/workspace/betfair/app/clubes-api/src/main/java/com/betfair/api/repository/ClubeRepository.java

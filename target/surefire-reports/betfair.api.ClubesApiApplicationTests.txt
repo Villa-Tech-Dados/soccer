@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: betfair.api.ClubesApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.894 s - in betfair.api.ClubesApiApplicationTests
