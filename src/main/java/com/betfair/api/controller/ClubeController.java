@@ -1,20 +1,20 @@
 package com.betfair.api.controller;
 
 
-
-import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
-import org.springframework.beans.MutablePropertyValues;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
-import org.springframework.validation.DataBinder;
+import org.springframework.core.env.Environment;
+import org.springframework.data.web.PagedResourcesAssembler;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,65 +22,45 @@ import com.betfair.api.model.Clube;
 import com.betfair.api.service.ClubeService;
 
 
-
 @RestController
-@RequestMapping(value="/clubes")
+@RequestMapping(value="/v1/clubes", produces=MediaType.APPLICATION_JSON_VALUE )
 public class ClubeController {
-
-
+	
+	
 	@Autowired
 	private ClubeService clubeService;
 	
-	
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Clube getById(@PathVariable Long id) throws Exception {
-		Clube detail = (Clube) clubeService.getById(id);
-        if (detail == null) {
-            throw new Exception();
-        } else {
-            return detail;
-        }
+    @GetMapping("")
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<Clube> listaClube(
+    		@RequestParam(name="id", required=false) Long id,
+			@RequestParam(name = "nome", required = false) String nome,
+    		@RequestParam(name="sort", required=false) String[] sort) {    
+    	
+        List<Clube> result = this.clubeService.findAll(id, nome, sort);   
+        return result;
     }
-	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Clube> findAll() throws Exception {
-		return clubeService.findAll();
-    }
-	
-	//Procura com Like
-	@RequestMapping(value = "/search/{place}", method = RequestMethod.GET)
-    public List<Clube> findByPlaceContaining(@PathVariable String place) throws Exception {
-		return clubeService.findByPlaceContaining(place.toUpperCase());
-    }
-	
-	//Encontra o nome exato
-	@RequestMapping(value = "/find/{place}", method = RequestMethod.GET)
-    public Clube findByPlace(@PathVariable String place) throws Exception {
-		return clubeService.findByPlace(place.toUpperCase());
-    }
-	
-	@RequestMapping(method = RequestMethod.POST)
-    public Clube create(@RequestBody Clube detail) {
-        return clubeService.save(detail);
-	}
 
-	@RequestMapping(method = RequestMethod.DELETE)
-    public void delete(@RequestBody Clube detail) throws Exception {
-		Clube clubeEncontrado = (Clube) clubeService.getById(detail.getId());
-        if (detail == null) {
-            throw new Exception();
+    @GetMapping(value="/{id}")
+    public Clube consultaClube ( @PathVariable("id") Long id) {
+        Clube result = null;
+        Optional<Clube> clube = this.clubeService.consultaClube(id);
+        if(clube.isPresent()){
+            result = clube.get();
         } else {
-        	 clubeService.delete(clubeEncontrado);
+//           throw new RuntimeException(env.getProperty("Clube.naoEncontrado"), HttpStatus.NOT_FOUND);
         }
-       
-	}
-	
-	@RequestMapping(value = "/info", method = RequestMethod.GET)
-    public String info() throws Exception {
-		return "Informações sobre a API de Clubes";
-	}
-	
-//    @ResponseStatus(HttpStatus.NOT_FOUND)
-//    static class ClubeNotFoundException extends RuntimeException {
-//    }
+        return result;
+    }
+
+    @GetMapping(value="/timeout")
+    @ResponseStatus(value = HttpStatus.OK)
+    public void timeout() {
+        try {
+            Thread.sleep(360000);
+         } catch (Exception e) {
+            e.printStackTrace();
+         }        
+    }    
+
 }
