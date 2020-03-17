@@ -3,81 +3,113 @@ package com.betfair.api.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@Entity
+@Table(name = "partidas")
+@EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(
+        value = {"createdAt", "updatedAt"},
+        allowGetters = true
+)
 public class Partida implements Serializable{
 
-	private String data;
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "partida_generator")
+	@SequenceGenerator(
+            name = "partida_generator",
+            sequenceName = "partida_id_seq"
+			)
+	private Long id;
 	
-	private String hora;
+	@Column(columnDefinition = "date")
+	private Date data_hora;
 	
-	private String pais;
+	@Column(columnDefinition = "integer")
+	private Long id_liga;
 	
-	private String liga;
+	@Column(columnDefinition = "integer")
+	private Long id_time_casa;
 	
-	private String time_casa;
+	@Column(columnDefinition = "integer")
+	private Long id_time_fora;
 	
-	private String time_fora;
-	
+	@Column(columnDefinition = "integer")
 	private Long gols_time_casa;
 	
+	@Column(columnDefinition = "integer")
 	private Long gols_time_fora;
 	
+	@Column(columnDefinition = "double precision")
 	private Double odd_casa;
 	
+	@Column(columnDefinition = "double precision")
 	private Double odd_empate;
 	
+	@Column(columnDefinition = "double precision")
 	private Double odd_fora;
+	
+//	@Column(columnDefinition = "text")
+//	private String nome;
+	
+//	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+//    @JoinColumn(name = "question_id", nullable = false)
+//    @OnDelete(action = OnDeleteAction.CASCADE)
+//	@JsonIgnore
+//	private Pais pais;
 
 	public Partida() {
 	}
 	
-	
-
-	public String getData() {
-		return data;
+	public Long getId() {
+		return id;
 	}
 
-
-
-	public void setData(String data) {
-		this.data = data;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-
-
-	public String getHora() {
-		return hora;
+	public Date getData_hora() {
+		return data_hora;
 	}
 
-
-
-	public void setHora(String hora) {
-		this.hora = hora;
+	public void setData_hora(Date data_hora) {
+		this.data_hora = data_hora;
 	}
 
-
-
-	public String getLiga() {
-		return liga;
+	public Long getId_liga() {
+		return id_liga;
 	}
 
-	public void setLiga(String liga) {
-		this.liga = liga;
+	public void setId_liga(Long id_liga) {
+		this.id_liga = id_liga;
 	}
 
-	public String getTime_casa() {
-		return time_casa;
+	public Long getId_time_casa() {
+		return id_time_casa;
 	}
 
-	public void setTime_casa(String time_casa) {
-		this.time_casa = time_casa;
+	public void setId_time_casa(Long id_time_casa) {
+		this.id_time_casa = id_time_casa;
 	}
 
-	public String getTime_fora() {
-		return time_fora;
+	public Long getId_time_fora() {
+		return id_time_fora;
 	}
 
-	public void setTime_fora(String time_fora) {
-		this.time_fora = time_fora;
+	public void setId_time_fora(Long id_time_fora) {
+		this.id_time_fora = id_time_fora;
 	}
 
 	public Long getGols_time_casa() {
@@ -119,21 +151,6 @@ public class Partida implements Serializable{
 	public void setOdd_fora(Double odd_fora) {
 		this.odd_fora = odd_fora;
 	}
-
-	public String getPais() {
-		return pais;
-	}
-
-	public void setPais(String pais) {
-		this.pais = pais;
-	}
-
-	@Override
-	public String toString() {
-		return "Partida [data=" + data + ", hora=" + hora + ", pais=" + pais + ", liga=" + liga + ", time_casa="
-				+ time_casa + ", time_fora=" + time_fora + ", gols_time_casa=" + gols_time_casa + ", gols_time_fora="
-				+ gols_time_fora + ", odd_casa=" + odd_casa + ", odd_empate=" + odd_empate + ", odd_fora=" + odd_fora
-				+ "]";
-	}
-
+		
+	
 }

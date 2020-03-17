@@ -14,37 +14,47 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.betfair.api.model.Clube;
-import com.betfair.api.service.ClubeService;
+import com.betfair.api.model.Partida;
+import com.betfair.api.service.PartidaService;
 
 
 @RestController
-@RequestMapping(value="/v1/clubes", produces=MediaType.APPLICATION_JSON_VALUE )
-public class ClubeController {
+@RequestMapping(value="/v1/partidas", produces=MediaType.APPLICATION_JSON_VALUE )
+public class PartidaController {
 	
 	
 	@Autowired
-	private ClubeService clubeService;
+	private PartidaService partidaService;
 	
+    @GetMapping("parse/{file}")
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<Partida> parseToPartidaLista(
+    		@RequestParam(name="file", required=false) String file) {    
+    	
+        List<Partida> result = this.partidaService.parseToPartidaLista(file);   
+        
+        return result;
+    }
+
     @GetMapping("")
     @ResponseStatus(value = HttpStatus.OK)
-    public List<Clube> listaClube(
+    public List<Partida> listaPartida(
     		@RequestParam(name="id", required=false) Long id,
 			@RequestParam(name = "nome", required = false) String nome,
     		@RequestParam(name="sort", required=false) String[] sort) {    
     	
-        List<Clube> result = this.clubeService.findAll(id, nome, sort);   
+        List<Partida> result = this.partidaService.findAll(id, nome, sort);   
         return result;
     }
 
     @GetMapping(value="/{id}")
-    public Clube consultaClube ( @PathVariable("id") Long id) {
-        Clube result = null;
-        Optional<Clube> clube = this.clubeService.consultaClube(id);
-        if(clube.isPresent()){
-            result = clube.get();
+    public Partida consultaPartida ( @PathVariable("id") Long id) {
+        Partida result = null;
+        Optional<Partida> partida = this.partidaService.consultaPartida(id);
+        if(partida.isPresent()){
+            result = partida.get();
         } else {
-//           throw new RuntimeException(env.getProperty("Clube.naoEncontrado"), HttpStatus.NOT_FOUND);
+//           throw new RuntimeException(env.getProperty("Partida.naoEncontrado"), HttpStatus.NOT_FOUND);
         }
         return result;
     }
@@ -57,6 +67,6 @@ public class ClubeController {
          } catch (Exception e) {
             e.printStackTrace();
          }        
-    }    
+    }     
 
 }
