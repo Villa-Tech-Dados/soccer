@@ -13,62 +13,62 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.betfair.api.model.Clube;
-import com.betfair.api.repository.ClubeRepository;
-import com.betfair.api.specification.ClubeSpecification;
+import com.betfair.api.model.Pais;
+import com.betfair.api.repository.PaisRepository;
+import com.betfair.api.specification.PaisSpecification;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
-public class ClubeService {
+public class PaisService {
 
 
-	private Logger log = LoggerFactory.getLogger(ClubeService.class);
+	private Logger log = LoggerFactory.getLogger(PaisService.class);
 
 	@Autowired
-	private ClubeRepository clubeRepository;
+	private PaisRepository paisRepository;
 	@Autowired
 	private Environment environment;
 	@Autowired
 	private ObjectMapper mapper;
 
 	@Transactional(propagation = Propagation.SUPPORTS)
-	public Optional<Clube> consultaClube(Long id) {
-		Optional<Clube> result = clubeRepository.findById(id);
+	public Optional<Pais> consultaPais(Long id) {
+		Optional<Pais> result = paisRepository.findById(id);
 		return result;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
-	public void salva(Clube clube) {
-		clubeRepository.save(clube);
+	public void salva(Pais pais) {
+		paisRepository.save(pais);
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
-	public void atualiza(Clube clube) {
-		Optional<Clube> exists = this.clubeRepository.findById(clube.getId());
+	public void atualiza(Pais pais) {
+		Optional<Pais> exists = this.paisRepository.findById(pais.getId());
 		if (exists.isPresent()) {
-			clubeRepository.save(clube);
+			paisRepository.save(pais);
 		} else {
-			throw new RuntimeException(environment.getProperty("Clube.naoEncontradoParaAtualizacao"));
+			throw new RuntimeException(environment.getProperty("Pais.naoEncontradoParaAtualizacao"));
 		}
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void remove(Long id) {
-		Optional<Clube> exists = this.clubeRepository.findById(id);
+		Optional<Pais> exists = this.paisRepository.findById(id);
 		if (exists.isPresent()) {
-			clubeRepository.deleteById(id);
+			paisRepository.deleteById(id);
 		} else {
-			throw new RuntimeException(environment.getProperty("Clube.naoEncontradoParaExclusao"));
+			throw new RuntimeException(environment.getProperty("Pais.naoEncontradoParaExclusao"));
 		}
 	}
 
 	@Transactional(propagation = Propagation.SUPPORTS)
-	public List<Clube> findAll(Long id, String nome) {
+	public List<Pais> findAll(Long id, String nome) {
 //		Sort sort2 = utilSortOrder.sorting(sort);
-		Specification<Clube> specs = new ClubeSpecification(id, nome);
-		List<Clube> result = clubeRepository.findAll(specs);
+		Specification<Pais> specs = new PaisSpecification(id, nome);
+		List<Pais> result = paisRepository.findAll(specs);
 		try {
-			log.info("Clube: {}", mapper.writeValueAsString(result));
+			log.info("Pais: {}", mapper.writeValueAsString(result));
 		} catch (Exception ignored) {
 		}
 		return result;

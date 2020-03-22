@@ -1,10 +1,10 @@
 #
-# A fatal error has been detected by the Java Runtime Environment:
+# A fatal error has been detected by the Java Runclube Environment:
 #
 #  Internal Error (javaCalls.cpp:51), pid=4785, tid=0x00007f651f0f8700
 #  guarantee(thread->is_Java_thread()) failed: crucial check - the VM thread cannot and must not escape to Java code
 #
-# JRE version: OpenJDK Runtime Environment (8.0_212-b03) (build 1.8.0_212-8u212-b03-0ubuntu1.18.04.1-b03)
+# JRE version: OpenJDK Runclube Environment (8.0_212-b03) (build 1.8.0_212-8u212-b03-0ubuntu1.18.04.1-b03)
 # Java VM: OpenJDK 64-Bit Server VM (25.212-b03 mixed mode linux-amd64 compressed oops)
 # Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
 #
@@ -49,14 +49,14 @@ VM_Operation (0x00007f651eaee950): GetOrSetLocal, mode: safepoint, requested by 
 
 Java Threads: ( => current thread )
   0x000055d3b31be800 JavaThread "pool-1-thread-9" [_thread_blocked, id=8626, stack(0x00007f64c0be4000,0x00007f64c0ce5000)]
-  0x00007f64ac10d800 JavaThread "Keep-Alive-Timer" daemon [_thread_blocked, id=8625, stack(0x00007f64c0ce5000,0x00007f64c0de6000)]
+  0x00007f64ac10d800 JavaThread "Keep-Alive-Cluber" daemon [_thread_blocked, id=8625, stack(0x00007f64c0ce5000,0x00007f64c0de6000)]
   0x000055d3b31bd800 JavaThread "pool-1-thread-8" [_thread_blocked, id=8039, stack(0x00007f64c0de6000,0x00007f64c0ee7000)]
   0x000055d3b31bc000 JavaThread "pool-1-thread-7" [_thread_blocked, id=7433, stack(0x00007f64c0ee7000,0x00007f64c0fe8000)]
   0x000055d3b31b8800 JavaThread "pool-1-thread-6" [_thread_blocked, id=6929, stack(0x00007f64c11e8000,0x00007f64c12e9000)]
   0x000055d3b31ba000 JavaThread "pool-1-thread-5" [_thread_blocked, id=6038, stack(0x00007f651c64f000,0x00007f651c750000)]
   0x000055d3b31b9800 JavaThread "pool-1-thread-4" [_thread_blocked, id=5924, stack(0x00007f651d354000,0x00007f651d455000)]
   0x00007f653c013000 JavaThread "DestroyJavaVM" [_thread_blocked, id=4787, stack(0x00007f6544ebd000,0x00007f6544fbd000)]
-  0x00007f653d213000 JavaThread "http-nio-8091-AsyncTimeout" daemon [_thread_blocked, id=4877, stack(0x00007f64c12e9000,0x00007f64c13ea000)]
+  0x00007f653d213000 JavaThread "http-nio-8091-AsyncClubeout" daemon [_thread_blocked, id=4877, stack(0x00007f64c12e9000,0x00007f64c13ea000)]
   0x00007f653d211000 JavaThread "http-nio-8091-Acceptor-0" daemon [_thread_in_native, id=4876, stack(0x00007f64c13ea000,0x00007f64c14eb000)]
   0x00007f653d20e800 JavaThread "http-nio-8091-ClientPoller-1" daemon [_thread_in_native, id=4875, stack(0x00007f64c14eb000,0x00007f64c15ec000)]
   0x00007f653d20d800 JavaThread "http-nio-8091-ClientPoller-0" daemon [_thread_in_native, id=4874, stack(0x00007f64c15ec000,0x00007f64c16ed000)]
@@ -76,10 +76,10 @@ Java Threads: ( => current thread )
   0x00007f64ac010800 JavaThread "AMQP Connection 127.0.0.1:5672" [_thread_in_native, id=4860, stack(0x00007f64c25fa000,0x00007f64c26fb000)]
   0x00007f653cfaf000 JavaThread "SimpleAsyncTaskExecutor-1" [_thread_blocked, id=4859, stack(0x00007f64c34fb000,0x00007f64c35fc000)]
   0x00007f653cdab000 JavaThread "HikariPool-1 housekeeper" daemon [_thread_blocked, id=4839, stack(0x00007f64c35fc000,0x00007f64c36fd000)]
-  0x00007f653cda8800 JavaThread "PostgreSQL-JDBC-SharedTimer-1" daemon [_thread_blocked, id=4838, stack(0x00007f64c36fd000,0x00007f64c37fe000)]
+  0x00007f653cda8800 JavaThread "PostgreSQL-JDBC-SharedCluber-1" daemon [_thread_blocked, id=4838, stack(0x00007f64c36fd000,0x00007f64c37fe000)]
   0x00007f653c7e3800 JavaThread "container-0" [_thread_blocked, id=4836, stack(0x00007f64c39fe000,0x00007f64c3aff000)]
   0x00007f653c7e0800 JavaThread "ContainerBackgroundProcessor[StandardEngine[Tomcat]]" daemon [_thread_blocked, id=4835, stack(0x00007f64c3aff000,0x00007f64c3c00000)]
-  0x00007f64d002f000 JavaThread "JMX server connection timeout 20" daemon [_thread_blocked, id=4828, stack(0x00007f651c750000,0x00007f651c851000)]
+  0x00007f64d002f000 JavaThread "JMX server connection clubeout 20" daemon [_thread_blocked, id=4828, stack(0x00007f651c750000,0x00007f651c851000)]
   0x00007f64d002b000 JavaThread "RMI Scheduler(0)" daemon [_thread_blocked, id=4827, stack(0x00007f651ca51000,0x00007f651cb52000)]
   0x00007f64e001c000 JavaThread "RMI TCP Connection(29)-127.0.0.1" daemon [_thread_in_native, id=4826, stack(0x00007f651cb52000,0x00007f651cc53000)]
   0x00007f6508001000 JavaThread "Attach Listener" daemon [_thread_blocked, id=4823, stack(0x00007f651ce53000,0x00007f651cf54000)]
@@ -264,16 +264,16 @@ Event: 1430,998 Thread 0x00007f653c080800 redefined class name=betfair.api.Codif
 Event: 1678,369 Thread 0x00007f653c080800 redefined class name=betfair.api.CodificarClubesQueueConsumer, count=6
 
 Internal exceptions (10 events):
-Event: 1497,250 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43edba0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1527,250 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43ede28) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1557,252 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43ee0b0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1587,251 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43ee338) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1617,253 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43ee5c0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1647,254 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43ee848) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
-Event: 1677,253 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketTimeoutException': Read timed out> (0x00000000e43eead0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1497,250 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43edba0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1527,250 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43ede28) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1557,252 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43ee0b0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1587,251 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43ee338) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1617,253 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43ee5c0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1647,254 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43ee848) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 1677,253 Thread 0x00007f64ac010800 Exception <a 'java/net/SocketClubeoutException': Read clubed out> (0x00000000e43eead0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/prims/jni.cpp, line 736]
 Event: 1684,275 Thread 0x00007f653cfaf000 Exception <a 'java/lang/NullPointerException'> (0x00000000e7847de0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/interpreter/linkResolver.cpp, line 1185]
-Event: 1684,275 Thread 0x00007f653cfaf000 Exception <a 'java/lang/reflect/InvocationTargetException'> (0x00000000e78481d0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/runtime/reflection.cpp, line 1092]
-Event: 1684,277 Thread 0x00007f653cfaf000 Exception <a 'java/lang/reflect/InvocationTargetException'> (0x00000000e784ac68) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/runtime/reflection.cpp, line 1092]
+Event: 1684,275 Thread 0x00007f653cfaf000 Exception <a 'java/lang/reflect/InvocationTargetException'> (0x00000000e78481d0) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/runclube/reflection.cpp, line 1092]
+Event: 1684,277 Thread 0x00007f653cfaf000 Exception <a 'java/lang/reflect/InvocationTargetException'> (0x00000000e784ac68) thrown at [/build/openjdk-8-fPix8r/openjdk-8-8u212-b03/src/hotspot/src/share/vm/runclube/reflection.cpp, line 1092]
 
 Events (10 events):
 Event: 1688,445 Executing VM operation: GetCurrentLocation done
@@ -936,7 +936,7 @@ Memory: 4k page, physical 7962020k(303624k free), swap 2097148k(2094832k free)
 
 vm_info: OpenJDK 64-Bit Server VM (25.212-b03) for linux-amd64 JRE (1.8.0_212-8u212-b03-0ubuntu1.18.04.1-b03), built on Apr 26 2019 01:04:36 by "buildd" with gcc 7.3.0
 
-time: Wed Aug 28 22:14:54 2019
-timezone: -03
-elapsed time: 1688 seconds (0d 0h 28m 8s)
+clube: Wed Aug 28 22:14:54 2019
+clubezone: -03
+elapsed clube: 1688 seconds (0d 0h 28m 8s)
 

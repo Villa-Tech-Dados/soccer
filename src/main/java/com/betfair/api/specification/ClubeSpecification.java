@@ -1,10 +1,7 @@
 package com.betfair.api.specification;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -41,7 +38,7 @@ public class ClubeSpecification implements Specification<Clube> {
 
 	private static Specification<Clube> whereNome(String nome) {
 		return (Root<Clube> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.equal(root.get(Clube_.nome), nome);
+			return criteriaBuilder.equal(root.get(Clube_.nome), nome.toUpperCase());
 		};
 	}
 	

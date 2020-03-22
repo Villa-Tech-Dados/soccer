@@ -40,16 +40,16 @@ public class Partida implements Serializable{
 	private Long id_liga;
 	
 	@Column(columnDefinition = "integer")
-	private Long id_time_casa;
+	private Long id_clube_casa;
 	
 	@Column(columnDefinition = "integer")
-	private Long id_time_fora;
+	private Long id_clube_fora;
 	
 	@Column(columnDefinition = "integer")
-	private Long gols_time_casa;
+	private Long gols_clube_casa;
 	
 	@Column(columnDefinition = "integer")
-	private Long gols_time_fora;
+	private Long gols_clube_fora;
 	
 	@Column(columnDefinition = "double precision")
 	private Double odd_casa;
@@ -96,36 +96,36 @@ public class Partida implements Serializable{
 		this.id_liga = id_liga;
 	}
 
-	public Long getId_time_casa() {
-		return id_time_casa;
+	public Long getId_clube_casa() {
+		return id_clube_casa;
 	}
 
-	public void setId_time_casa(Long id_time_casa) {
-		this.id_time_casa = id_time_casa;
+	public void setId_clube_casa(Long id_clube_casa) {
+		this.id_clube_casa = id_clube_casa;
 	}
 
-	public Long getId_time_fora() {
-		return id_time_fora;
+	public Long getId_clube_fora() {
+		return id_clube_fora;
 	}
 
-	public void setId_time_fora(Long id_time_fora) {
-		this.id_time_fora = id_time_fora;
+	public void setId_clube_fora(Long id_clube_fora) {
+		this.id_clube_fora = id_clube_fora;
 	}
 
-	public Long getGols_time_casa() {
-		return gols_time_casa;
+	public Long getGols_clube_casa() {
+		return gols_clube_casa;
 	}
 
-	public void setGols_time_casa(Long gols_time_casa) {
-		this.gols_time_casa = gols_time_casa;
+	public void setGols_clube_casa(Long gols_clube_casa) {
+		this.gols_clube_casa = gols_clube_casa;
 	}
 
-	public Long getGols_time_fora() {
-		return gols_time_fora;
+	public Long getGols_clube_fora() {
+		return gols_clube_fora;
 	}
 
-	public void setGols_time_fora(Long gols_time_fora) {
-		this.gols_time_fora = gols_time_fora;
+	public void setGols_clube_fora(Long gols_clube_fora) {
+		this.gols_clube_fora = gols_clube_fora;
 	}
 
 	public Double getOdd_casa() {

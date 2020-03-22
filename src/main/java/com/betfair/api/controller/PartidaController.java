@@ -26,7 +26,7 @@ public class PartidaController {
 	@Autowired
 	private PartidaService partidaService;
 	
-    @GetMapping("parse/{file}")
+    @GetMapping("/parse")
     @ResponseStatus(value = HttpStatus.OK)
     public List<Partida> parseToPartidaLista(
     		@RequestParam(name="file", required=false) String file) {    
@@ -59,9 +59,9 @@ public class PartidaController {
         return result;
     }
 
-    @GetMapping(value="/timeout")
+    @GetMapping(value="/clubeout")
     @ResponseStatus(value = HttpStatus.OK)
-    public void timeout() {
+    public void clubeout() {
         try {
             Thread.sleep(360000);
          } catch (Exception e) {

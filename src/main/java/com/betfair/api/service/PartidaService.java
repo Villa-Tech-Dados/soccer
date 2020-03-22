@@ -17,6 +17,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.betfair.api.model.Clube;
+import com.betfair.api.model.Pais;
 import com.betfair.api.model.Partida;
 import com.betfair.api.repository.PartidaRepository;
 import com.betfair.api.specification.PartidaSpecification;
@@ -29,7 +31,11 @@ public class PartidaService {
 	private Logger log = LoggerFactory.getLogger(PartidaService.class);
 
 	@Autowired
-	private PartidaRepository clubeRepository;
+	private PartidaRepository partidaRepository;
+	@Autowired
+	private ClubeService clubeService;;
+	@Autowired
+	private PaisService paisService;;
 	@Autowired
 	private Environment environment;
 	@Autowired
@@ -37,31 +43,31 @@ public class PartidaService {
 
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public Optional<Partida> consultaPartida(Long id) {
-		Optional<Partida> result = clubeRepository.findById(id);
+		Optional<Partida> result = partidaRepository.findById(id);
 		return result;
 	}
 
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public Optional<Partida> consultaPartidaComRedis(Long id) {
 		Optional<Partida> result = null;
-		result = clubeRepository.findById(id);
+		result = partidaRepository.findById(id);
 		return result;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void salva(Partida clube) {
-		Optional<Partida> exists = clubeRepository.findById(clube.getId());
+		Optional<Partida> exists = partidaRepository.findById(clube.getId());
 		if (exists.isPresent()) {
 //			throw new RuntimeException(environment.getProperty("Partida.jaExistente"), exists.get().getId());
 		}
-		clubeRepository.save(clube);
+		partidaRepository.save(clube);
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void atualiza(Partida clube) {
-		Optional<Partida> exists = this.clubeRepository.findById(clube.getId());
+		Optional<Partida> exists = this.partidaRepository.findById(clube.getId());
 		if (exists.isPresent()) {
-			clubeRepository.save(clube);
+			partidaRepository.save(clube);
 		} else {
 			throw new RuntimeException(environment.getProperty("Partida.naoEncontradoParaAtualizacao"));
 		}
@@ -69,9 +75,9 @@ public class PartidaService {
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public void remove(Long id) {
-		Optional<Partida> exists = this.clubeRepository.findById(id);
+		Optional<Partida> exists = this.partidaRepository.findById(id);
 		if (exists.isPresent()) {
-			clubeRepository.deleteById(id);
+			partidaRepository.deleteById(id);
 		} else {
 			throw new RuntimeException(environment.getProperty("Partida.naoEncontradoParaExclusao"));
 		}
@@ -101,12 +107,15 @@ public class PartidaService {
 			String linha2 = "";
 			String linha3 = "";
 			String linha4 = "";
+			String linha5 = "";
+			String nomePais = "";
 			boolean isCabecalho = false;
 			if(br.ready()) {
-				linha1 = br.readLine(); //﻿ROMÊNIALiga 2
-				linha2 = br.readLine(); //﻿1
-				linha3 = br.readLine(); //﻿X
-				linha4 = br.readLine(); //﻿2				
+				linha1 = br.readLine(); //﻿ROMÊNIA
+				linha2 = br.readLine(); //﻿W-League - Playoffs
+				linha3 = br.readLine(); //﻿1
+				linha4 = br.readLine(); //﻿X
+				linha5 = br.readLine(); //﻿2				
 				isCabecalho = true;
 			}
 			while (br.ready()) {
@@ -114,42 +123,75 @@ public class PartidaService {
 					//Linha com Nome da Liga
 					partida = new Partida();
 					boolean acheiMinuscula = false;
-					int pos = 0;
-					while(!acheiMinuscula && pos < linha1.length()) {
-						if(linha1.charAt(pos) >= 97 && linha1.charAt(pos) <= 122) { //Minuscula
-							acheiMinuscula = true;
-						}
-						pos++;
-					}
-					String nomePais = linha1.substring(0, pos - 2);
-					String nomeLiga = linha1.substring(pos - 2, linha1.length());
-//					partida.setPais(nomePais.trim());
-//					partida.setLiga(nomeLiga.trim());
+					nomePais = linha1;
+					String nomeLiga = linha2;
 					isCabecalho = false;
 				}else {
 					String encerrado = br.readLine();
 					if(!encerrado.equals("Encerrado")) {
 						isCabecalho = true;
-						linha1 = encerrado; //﻿ROMÊNIALiga 2
-						linha2 = br.readLine(); //﻿1
-						linha3 = br.readLine(); //﻿X
-						linha4 = br.readLine(); //﻿2				
+						linha1 = encerrado; //﻿ROMÊNIA
+						linha2 = br.readLine(); //﻿W-League - Playoffs
+						linha3 = br.readLine(); //﻿1
+						linha4 = br.readLine(); //﻿X
+						linha5 = br.readLine(); //﻿2				
 						isCabecalho = true;
 					}else {
 						isCabecalho = false;
 						String data = file.substring(0, 10);
+						//FIXME Usar o java local date
 //						partida.setData(data);
 //						partida.setHora("00:00:00");
-//						String timeCasa = br.readLine();
-//						partida.setTime_casa(timeCasa.trim());
-//						String timeFora = br.readLine();
-//						partida.setTime_fora(timeFora.trim());
+						String clubeCasa = br.readLine();
+						List<Clube> clubes = clubeService.findAll(null, clubeCasa);
+						Clube clube = new Clube();
+						Pais pais = new Pais();
+						if(clubes.isEmpty()) { //Novo Clube
+							clube.setNome(clubeCasa);
+							List<Pais> paises = paisService.findAll(null, nomePais);
+							if(paises.isEmpty()) {
+								pais.setNome(nomePais);
+								paisService.salva(pais);
+								pais = paisService.findAll(null, nomePais).get(0);
+							}else {
+								pais = paises.get(0);	
+							}
+							clube.setPais(pais.getId());
+							clubeService.salva(clube);
+							clube = clubeService.findAll(null, clubeCasa).get(0);	
+						}else {
+							clube = clubes.get(0);	
+						}
+						partida.setId_clube_casa(clube.getId());
+						
+						String clubeFora = br.readLine();
+						clubes = clubeService.findAll(null, clubeFora);
+						clube = new Clube();
+						pais = new Pais();
+						if(clubes.isEmpty()) { //Novo Clube
+							clube.setNome(clubeFora);
+							List<Pais> paises = paisService.findAll(null, nomePais);
+							if(paises.isEmpty()) {
+								pais.setNome(nomePais);
+								paisService.salva(pais);
+								pais = paisService.findAll(null, nomePais).get(0);
+							}else {
+								pais = paises.get(0);	
+							}
+							clube.setPais(pais.getId());
+							clubeService.salva(clube);
+							clube = clubeService.findAll(null, clubeFora).get(0);	
+						}else {
+							clube = clubes.get(0);	
+						}
+						partida.setId_clube_fora(clube.getId());						
+						
 						String resultado = br.readLine();
 						String[] placar = resultado.split(" - ");
 						String placarCasa = placar[0];
-						partida.setGols_time_casa(new Long(placarCasa));
+						partida.setGols_clube_casa(new Long(placarCasa));
 						String placarFora = placar[1];
-						partida.setGols_time_fora(new Long(placarFora));
+						partida.setGols_clube_fora(new Long(placarFora));
 						Double oddCasa = new Double("0.0");
 						String oddString = br.readLine();
 						if(!oddString.equals("-")) {

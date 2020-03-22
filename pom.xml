@@ -50,7 +50,7 @@
 		<dependency>
 		    <groupId>org.postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
-		    <scope>runtime</scope>
+		    <scope>runclube</scope>
 		</dependency>
 
 		<dependency>
@@ -94,7 +94,7 @@
                                 <encoding.source>UTF-8</encoding.source>
                                 <encoding.reporting>UTF-8</encoding.reporting>
                                 <java.target>${maven.compiler.target}</java.target>
-                                <time>${maven.build.timestamp}</time>
+                                <clube>${maven.build.clubestamp}</clube>
                             </additionalProperties>
                         </configuration>
                     </execution>

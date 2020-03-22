@@ -33,7 +33,7 @@ public class ClubeController {
 			@RequestParam(name = "nome", required = false) String nome,
     		@RequestParam(name="sort", required=false) String[] sort) {    
     	
-        List<Clube> result = this.clubeService.findAll(id, nome, sort);   
+        List<Clube> result = this.clubeService.findAll(id, nome);   
         return result;
     }
 
@@ -49,9 +49,9 @@ public class ClubeController {
         return result;
     }
 
-    @GetMapping(value="/timeout")
+    @GetMapping(value="/clubeout")
     @ResponseStatus(value = HttpStatus.OK)
-    public void timeout() {
+    public void clubeout() {
         try {
             Thread.sleep(360000);
          } catch (Exception e) {

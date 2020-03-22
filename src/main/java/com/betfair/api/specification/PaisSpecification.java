@@ -12,11 +12,11 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.data.jpa.domain.Specification;
 
-import com.betfair.api.model.Partida;
-import com.betfair.api.model.Partida_;
+import com.betfair.api.model.Pais;
+import com.betfair.api.model.Pais_;
 
 @SuppressWarnings("serial")
-public class PartidaSpecification implements Specification<Partida> {
+public class PaisSpecification implements Specification<Pais> {
 
 	@PersistenceContext
 	static EntityManager em;
@@ -24,33 +24,36 @@ public class PartidaSpecification implements Specification<Partida> {
 	private Long id;
 	private String nome;
 
-	public PartidaSpecification(Long id, String nome) {
+	public PaisSpecification(Long id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public static Specification<Partida> whereId(Long id) {
-		return (Root<Partida> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.equal(root.get(Partida_.id), id);
+	public static Specification<Pais> whereId(Long id) {
+		return (Root<Pais> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
+			return criteriaBuilder.equal(root.get(Pais_.id), id);
 		};
 	}
 
-	private static Specification<Partida> whereNome(Long id_clube_casa) {
-		return (Root<Partida> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
-			return criteriaBuilder.equal(root.get(Partida_.id_clube_casa), id_clube_casa);
+	private static Specification<Pais> whereNome(String nome) {
+		return (Root<Pais> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) -> {
+			return criteriaBuilder.equal(root.get(Pais_.nome), nome);
 		};
 	}
 	
 	@Override
-	public Predicate toPredicate(Root<Partida> root, CriteriaQuery<?> query,
+	public Predicate toPredicate(Root<Pais> root, CriteriaQuery<?> query,
 			CriteriaBuilder criteriaBuilder) {
 		final Collection<Predicate> predicates = new ArrayList<Predicate>();
 		if (this.id != null) {
-			Predicate p = criteriaBuilder.isTrue(root.get(Partida_.id).in(this.id));
+			Predicate p = criteriaBuilder.isTrue(root.get(Pais_.id).in(this.id));
 			predicates.add(p);
 		}
 		
+		if (this.nome != null) {
+			predicates.add(whereNome(this.nome).toPredicate(root, query, criteriaBuilder));
+		}
 
 		Predicate[] array = predicates.toArray(new Predicate[predicates.size()]);
 
