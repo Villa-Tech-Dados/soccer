@@ -4,6 +4,8 @@ package com.betfair.api.service;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -139,8 +141,9 @@ public class PartidaService {
 					}else {
 						isCabecalho = false;
 						String data = file.substring(0, 10);
-						//FIXME Usar o java local date
-//						partida.setData(data);
+						DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+						LocalDate localData = LocalDate.parse(data, format);;
+						partida.setData_hora(java.sql.Date.valueOf(localData));
 //						partida.setHora("00:00:00");
 						String clubeCasa = br.readLine();
 						List<Clube> clubes = clubeService.findAll(null, clubeCasa);
@@ -186,11 +189,10 @@ public class PartidaService {
 						}
 						partida.setId_clube_fora(clube.getId());						
 						
-						String resultado = br.readLine();
-						String[] placar = resultado.split(" - ");
-						String placarCasa = placar[0];
+						String placarCasa = br.readLine();
 						partida.setGols_clube_casa(new Long(placarCasa));
-						String placarFora = placar[1];
+						br.readLine();
+						String placarFora = br.readLine();
 						partida.setGols_clube_fora(new Long(placarFora));
 						Double oddCasa = new Double("0.0");
 						String oddString = br.readLine();
