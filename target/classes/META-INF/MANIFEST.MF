@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
+Built-By: villa
+Build-Jdk: 11.0.6
 Implementation-Title: soccer
 Implementation-Version: 1.0.0
-Built-By: villa
 Implementation-Vendor-Id: com.betfair.api
-Build-Jdk: 1.8.0_242
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/soccer
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/soccer
 Created-By: Maven Integration for Eclipse
 

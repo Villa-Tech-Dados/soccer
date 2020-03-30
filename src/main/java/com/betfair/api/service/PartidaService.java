@@ -213,6 +213,7 @@ public class PartidaService {
 						}
 						partida.setOdd_fora(oddFora);
 						partidas.add(partida);
+//						this.salva(partida);
 					}
 				}
 			}
